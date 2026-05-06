@@ -22,6 +22,9 @@ on:
       - 'data/**'
       - '.github/workflows/run_weatherstem_enrichment.yml'
 
+permissions:
+  contents: write
+
 jobs:
   enrich:
     runs-on: ubuntu-latest
@@ -29,6 +32,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -58,13 +63,15 @@ jobs:
 
           echo "Running: ${CMD[*]}"
           "${CMD[@]}"
+
       - name: Build map data
         run: |
           python scripts/build_map_data.py
+
       - name: Commit dashboard data
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add outputs/*.csv docs/data/*
 
@@ -72,8 +79,9 @@ jobs:
             echo "No dashboard data changes to commit."
           else
             git commit -m "Update WeatherSTEM dashboard data"
-            git push
+            git push origin HEAD:main
           fi
+
       - name: Upload outputs
         uses: actions/upload-artifact@v4
         with:
