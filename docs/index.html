@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>City Flash Flooding Dashboard</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <style>
+    html, body, #map {
+      height: 100%;
+      margin: 0;
+      background: #111;
+    }
+
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      background: rgba(20,20,20,0.92);
+      color: white;
+      padding: 12px;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+      width: 260px;
+    }
+
+    select, input {
+      width: 100%;
+      margin-top: 4px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="controls">
+  <h3>City Flash Flooding</h3>
+
+  <label>Metric</label>
+  <select id="metric">
+    <option value="max_15min_in">Max 15-min</option>
+    <option value="max_30min_in">Max 30-min</option>
+    <option value="max_60min_in" selected>Max 60-min</option>
+    <option value="max_180min_in">Max 180-min</option>
+    <option value="event_total_in">Event Total</option>
+    <option value="peak_rain_rate_inhr">Peak Rain Rate</option>
+  </select>
+
+  <label>Minimum Coverage %</label>
+  <input type="number" id="coverage" value="80">
+
+  <label>Maximum Distance (mi)</label>
+  <input type="number" id="distance" value="5">
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+const map = L.map('map').setView([29.95, -90.1], 9);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+let eventsLayer;
+
+function colorScale(v) {
+  if (v >= 4) return '#d7191c';
+  if (v >= 2) return '#fdae61';
+  if (v >= 1) return '#abd9e9';
+  return '#2c7bb6';
+}
+
+fetch('./data/flash_flood_events.geojson')
+  .then(r => r.json())
+  .then(data => {
+
+    window.eventData = data;
+
+    render();
+
+    document.getElementById('metric').addEventListener('change', render);
+    document.getElementById('coverage').addEventListener('change', render);
+    document.getElementById('distance').addEventListener('change', render);
+  });
+
+function render() {
+
+  const metric = document.getElementById('metric').value;
+  const minCoverage = Number(document.getElementById('coverage').value);
+  const maxDistance = Number(document.getElementById('distance').value);
+
+  if (eventsLayer) {
+    map.removeLayer(eventsLayer);
+  }
+
+  eventsLayer = L.geoJSON(window.eventData, {
+
+    filter: f => {
+      return Number(f.properties.coverage_pct || 0) >= minCoverage &&
+             Number(f.properties.distance_mi || 999) <= maxDistance;
+    },
+
+    pointToLayer: (feature, latlng) => {
+
+      const val = Number(feature.properties[metric]);
+
+      return L.circleMarker(latlng, {
+        radius: 7,
+        color: '#000',
+        weight: 1,
+        fillColor: colorScale(val),
+        fillOpacity: 0.85
+      });
+    },
+
+    onEachFeature: (feature, layer) => {
+
+      const p = feature.properties;
+
+      layer.bindPopup(`
+        <b>Event ID:</b> ${p.event_id}<br>
+        <b>Date:</b> ${p.event_datetime}<br>
+        <b>Parish:</b> ${p.event_parish}<br>
+        <b>Nearest Station:</b> ${p.nearest_station_name}<br>
+        <b>Distance:</b> ${p.distance_mi} mi<br>
+        <b>Coverage:</b> ${p.coverage_pct}%<br>
+        <hr>
+        <b>${metric}:</b> ${p[metric]}
+      `);
+    }
+
+  }).addTo(map);
+}
+
+</script>
+
+</body>
+</html>
