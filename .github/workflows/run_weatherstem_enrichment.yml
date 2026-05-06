@@ -61,6 +61,19 @@ jobs:
       - name: Build map data
         run: |
           python scripts/build_map_data.py
+      - name: Commit dashboard data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add outputs/*.csv docs/data/*
+
+          if git diff --cached --quiet; then
+            echo "No dashboard data changes to commit."
+          else
+            git commit -m "Update WeatherSTEM dashboard data"
+            git push
+          fi
       - name: Upload outputs
         uses: actions/upload-artifact@v4
         with:
