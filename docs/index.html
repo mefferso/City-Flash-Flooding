@@ -108,6 +108,34 @@ function num(value) {
   return Number.isFinite(n) ? n : null;
 }
 
+function fmt(value, digits = 2) {
+  const n = num(value);
+  return n == null ? '' : n.toFixed(digits);
+}
+
+function rateFromAmount(value, minutes) {
+  const n = num(value);
+  return n == null ? '' : (n * 60 / minutes).toFixed(2);
+}
+
+function amountRateText(value, minutes) {
+  const amount = fmt(value, 2);
+  const rate = rateFromAmount(value, minutes);
+  return amount === '' ? '' : `${amount}" (${rate}"/hr)`;
+}
+
+function maxRainRateInHr(p) {
+  const rates = [
+    rateFromAmount(p.nearest_max_15min_in, 15),
+    rateFromAmount(p.nearest_max_30min_in, 30),
+    rateFromAmount(p.nearest_max_60min_in, 60),
+    rateFromAmount(p.nearest_max_180min_in, 180),
+    p.nearest_peak_rain_rate_inhr
+  ].map(num).filter(v => v != null);
+
+  return rates.length ? Math.max(...rates).toFixed(2) : '';
+}
+
 function colorScale(v) {
   if (v == null) return '#888888';
   if (v >= 4) return '#d7191c';
@@ -149,7 +177,6 @@ function render() {
     },
     onEachFeature: (feature, layer) => {
       const p = feature.properties;
-      const value = p[metric] ?? '';
       layer.bindPopup(`
         <b>Event ID:</b> ${p.event_id ?? ''}<br>
         <b>Date:</b> ${p.event_datetime ?? ''}<br>
@@ -159,12 +186,12 @@ function render() {
         <b>Confidence:</b> ${p.nearest_station_confidence ?? ''}<br>
         <b>Coverage:</b> ${p.nearest_coverage_pct ?? ''}%<br>
         <hr>
-        <b>Nearest 15-min:</b> ${p.nearest_max_15min_in ?? ''}"<br>
-        <b>Nearest 30-min:</b> ${p.nearest_max_30min_in ?? ''}"<br>
-        <b>Nearest 60-min:</b> ${p.nearest_max_60min_in ?? ''}"<br>
-        <b>Nearest 180-min:</b> ${p.nearest_max_180min_in ?? ''}"<br>
-        <b>Nearest Total:</b> ${p.nearest_event_total_in ?? ''}"<br>
-        <b>Selected:</b> ${metric} = ${value}
+        <b>Nearest 15-min:</b> ${amountRateText(p.nearest_max_15min_in, 15)}<br>
+        <b>Nearest 30-min:</b> ${amountRateText(p.nearest_max_30min_in, 30)}<br>
+        <b>Nearest 60-min:</b> ${fmt(p.nearest_max_60min_in, 2)}"<br>
+        <b>Nearest 180-min:</b> ${fmt(p.nearest_max_180min_in, 2)}"<br>
+        <b>Nearest Total:</b> ${fmt(p.nearest_event_total_in, 2)}"<br>
+        <b>Max rainfall rate:</b> ${maxRainRateInHr(p)}"/hr
       `);
     }
   }).addTo(map);
