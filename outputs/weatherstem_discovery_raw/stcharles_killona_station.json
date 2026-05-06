@@ -1,0 +1,417 @@
+{
+  "cameras": [
+    {
+      "geo": {
+        "lng": "-90.4863590000",
+        "lat": "30.0014210000"
+      },
+      "elevation_angle": "45.00",
+      "id": 2205,
+      "heading": "47.00",
+      "name": "Cloud Camera",
+      "handle": "cumulus",
+      "live_stream": 1
+    }
+  ],
+  "type": "WeatherSTEM",
+  "priority": "Paying Customer",
+  "name": "Killona Volunteer Fire Department",
+  "id": 2016,
+  "time_zone": "Central",
+  "social": {
+    "wunderground": null,
+    "twitter": "KillonaWxSTEM",
+    "sponsors": {},
+    "facebook": "112933424928065"
+  },
+  "transmitters": [
+    {
+      "geo": {
+        "lng": "-90.4863590000",
+        "lat": "30.0014210000"
+      },
+      "sensors": [
+        {
+          "type": "Barometer",
+          "tokens": null,
+          "id": 41790,
+          "name": "Barometer",
+          "data_source": {
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            },
+            "metadata": "//current_observation/pressure_in"
+          },
+          "units": {
+            "symbol": "in. Hg",
+            "id": 90,
+            "name": "Inches of Mercury",
+            "property": {
+              "name": "Barometric Pressure",
+              "id": 38
+            }
+          },
+          "type_id": 16
+        },
+        {
+          "data_source": {
+            "metadata": "//current_observation/davis_current_observation/pressure_tendency_string",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          },
+          "units": {
+            "property": {
+              "id": 52,
+              "name": "Barometric Pressure Tendency"
+            },
+            "id": 104,
+            "name": "Pressure Tendency",
+            "symbol": " "
+          },
+          "type_id": 29,
+          "type": "Barometer Tendency",
+          "tokens": null,
+          "name": "Barometer Tendency",
+          "id": 41793
+        }
+      ],
+      "type": "Console",
+      "name": "Console",
+      "id": 5016,
+      "notes": "",
+      "channel": "E"
+    },
+    {
+      "id": 5019,
+      "name": "ISS",
+      "notes": "",
+      "channel": "2",
+      "geo": {
+        "lat": "30.0014210000",
+        "lng": "-90.4863590000"
+      },
+      "type": "Integrated Sensor Suite",
+      "sensors": [
+        {
+          "data_source": {
+            "metadata": "//current_observation/davis_current_observation/wind_ten_min_gust_mph",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          },
+          "type_id": 47,
+          "units": {
+            "symbol": "mph",
+            "property": {
+              "id": 36,
+              "name": "Wind Speed"
+            },
+            "name": "Miles Per Hour",
+            "id": 88
+          },
+          "tokens": null,
+          "type": "10 Minute Wind Gust",
+          "name": "10 Minute Wind Gust",
+          "id": 41796
+        },
+        {
+          "id": 41799,
+          "name": "Anemometer",
+          "type": "Anemometer",
+          "tokens": null,
+          "units": {
+            "symbol": "mph",
+            "property": {
+              "name": "Wind Speed",
+              "id": 36
+            },
+            "id": 88,
+            "name": "Miles Per Hour"
+          },
+          "type_id": 15,
+          "data_source": {
+            "metadata": "//current_observation/wind_mph",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          }
+        },
+        {
+          "type": "Dewpoint",
+          "tokens": null,
+          "id": 41802,
+          "name": "Dewpoint",
+          "data_source": {
+            "metadata": "//current_observation/dewpoint_f",
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            }
+          },
+          "units": {
+            "symbol": "&deg;F",
+            "property": {
+              "name": "Temperature",
+              "id": 35
+            },
+            "name": "Degrees Fahrenheit",
+            "id": 82
+          },
+          "type_id": 30
+        },
+        {
+          "data_source": {
+            "metadata": "//current_observation/heat_index_f",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          },
+          "units": {
+            "symbol": "&deg;F",
+            "id": 82,
+            "name": "Degrees Fahrenheit",
+            "property": {
+              "name": "Temperature",
+              "id": 35
+            }
+          },
+          "type_id": 33,
+          "type": "Heat Index",
+          "tokens": null,
+          "name": "Heat Index",
+          "id": 41805
+        },
+        {
+          "units": {
+            "id": 89,
+            "name": "Percent Humidity",
+            "property": {
+              "id": 37,
+              "name": "Relative Humidity"
+            },
+            "symbol": "%"
+          },
+          "type_id": 23,
+          "data_source": {
+            "metadata": "//current_observation/relative_humidity",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          },
+          "name": "Hygrometer",
+          "id": 41808,
+          "type": "Hygrometer",
+          "tokens": null
+        },
+        {
+          "data_source": {
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            },
+            "metadata": "//current_observation/davis_current_observation/rain_day_in"
+          },
+          "units": {
+            "property": {
+              "name": "Today's Rainfall",
+              "id": 51
+            },
+            "name": "Inches",
+            "id": 102,
+            "symbol": "in."
+          },
+          "type_id": 28,
+          "type": "Rain Gauge",
+          "tokens": null,
+          "id": 41811,
+          "name": "Rain Gauge"
+        },
+        {
+          "type": "Rain Rate",
+          "tokens": null,
+          "id": 41814,
+          "name": "Rain Rate",
+          "data_source": {
+            "metadata": "//current_observation/davis_current_observation/rain_rate_in_per_hr",
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            }
+          },
+          "units": {
+            "property": {
+              "name": "Rain Rate",
+              "id": 45
+            },
+            "name": "Inches Per Hour",
+            "id": 94,
+            "symbol": "in/hr"
+          },
+          "type_id": 22
+        },
+        {
+          "id": 41817,
+          "name": "Solar Radiation Sensor",
+          "type": "Solar Radiation Sensor",
+          "tokens": null,
+          "units": {
+            "symbol": "W/m^2",
+            "property": {
+              "name": "Solar Radiation",
+              "id": 41
+            },
+            "id": 92,
+            "name": "Watts Per Square Meter"
+          },
+          "type_id": 21,
+          "data_source": {
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            },
+            "metadata": "//current_observation/davis_current_observation/solar_radiation"
+          }
+        },
+        {
+          "type": "Thermometer",
+          "tokens": null,
+          "id": 41820,
+          "name": "Thermometer",
+          "data_source": {
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            },
+            "metadata": "//current_observation/temp_f"
+          },
+          "units": {
+            "symbol": "&deg;F",
+            "id": 82,
+            "name": "Degrees Fahrenheit",
+            "property": {
+              "id": 35,
+              "name": "Temperature"
+            }
+          },
+          "type_id": 13
+        },
+        {
+          "type_id": 20,
+          "units": {
+            "property": {
+              "name": "Ultra Violet Radiation",
+              "id": 42
+            },
+            "name": "UV Index",
+            "id": 93,
+            "symbol": " "
+          },
+          "data_source": {
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            },
+            "metadata": "//current_observation/davis_current_observation/uv_index"
+          },
+          "name": "UV Radiation Sensor",
+          "id": 41823,
+          "tokens": null,
+          "type": "UV Radiation Sensor"
+        },
+        {
+          "tokens": null,
+          "type": "Wet Bulb Globe Temperature",
+          "name": "Wet Bulb Globe Temperature",
+          "id": 41826,
+          "data_source": {
+            "metadata": "{\"namespace\":\"internal\",\"classref\":\"WeatherSTEM::Entity::Station::Instrument::Davis\",\"method\":\"get_wbgt\"}",
+            "type": {
+              "id": 2,
+              "name": "Generic"
+            }
+          },
+          "type_id": 35,
+          "units": {
+            "symbol": "&deg;F",
+            "property": {
+              "name": "Temperature",
+              "id": 35
+            },
+            "id": 82,
+            "name": "Degrees Fahrenheit"
+          }
+        },
+        {
+          "units": {
+            "name": "Degrees Fahrenheit",
+            "id": 82,
+            "property": {
+              "id": 35,
+              "name": "Temperature"
+            },
+            "symbol": "&deg;F"
+          },
+          "type_id": 42,
+          "data_source": {
+            "metadata": "//current_observation/windchill_f",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          },
+          "name": "Wind Chill",
+          "id": 41829,
+          "type": "Wind Chill",
+          "tokens": null
+        },
+        {
+          "type_id": 17,
+          "units": {
+            "symbol": "&deg;",
+            "name": "Degrees",
+            "id": 91,
+            "property": {
+              "id": 40,
+              "name": "Wind Direction"
+            }
+          },
+          "data_source": {
+            "metadata": "//current_observation/wind_degrees",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          },
+          "name": "Wind Vane",
+          "id": 41832,
+          "tokens": null,
+          "type": "Wind Vane"
+        }
+      ]
+    }
+  ],
+  "hardware": {
+    "device_id": "001D0A717D1C",
+    "weatherlinklive_id": "001D0A717D1C"
+  },
+  "geo": {
+    "address": "216 Adams St, Killona, LA 70057",
+    "lng": "-90.4863590000",
+    "elevation": 28,
+    "state": "LA",
+    "lat": "30.0014210000"
+  },
+  "handle": "killona",
+  "domain": {
+    "name": "St. Charles Parish, Louisiana",
+    "id": 478,
+    "handle": "stcharles"
+  }
+}

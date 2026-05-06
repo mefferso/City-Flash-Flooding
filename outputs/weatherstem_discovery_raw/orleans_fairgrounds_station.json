@@ -1,0 +1,499 @@
+{
+  "type": "WeatherSTEM",
+  "priority": "Paying Customer",
+  "name": "Fairgrounds Race Course - Fairgrounds",
+  "id": 2356,
+  "cameras": [
+    {
+      "elevation_angle": "45.00",
+      "geo": {
+        "lng": "-90.0793720000",
+        "lat": "29.9823840000"
+      },
+      "handle": "cumulus",
+      "name": "Cloud Camera",
+      "heading": "180.00",
+      "id": 2578,
+      "live_stream": 1
+    }
+  ],
+  "geo": {
+    "state": "LA",
+    "lat": "29.9823840000",
+    "address": "1663 Gentilly Blvd., New Orleans, LA 70119",
+    "lng": "-90.0793720000",
+    "elevation": 124
+  },
+  "handle": "fairgrounds",
+  "domain": {
+    "name": "Orleans Parish",
+    "id": 468,
+    "handle": "orleans"
+  },
+  "time_zone": "Central",
+  "social": {
+    "wunderground": null,
+    "twitter": null,
+    "sponsors": {},
+    "facebook": null
+  },
+  "transmitters": [
+    {
+      "id": 6055,
+      "name": "AirLink Air Quality Sensor",
+      "channel": "Q",
+      "notes": "{\"port\":\"8087\",\"did\":\"001D0A101E18\",\"ip_address\":\"63.41.244.130\"}",
+      "geo": {
+        "lat": "29.9823840000",
+        "lng": "-90.0793720000"
+      },
+      "type": "AirLink",
+      "sensors": [
+        {
+          "id": 50107,
+          "name": "AirLink PM1.0",
+          "tokens": null,
+          "type": "AirLink PM1.0",
+          "type_id": 64,
+          "units": {
+            "symbol": "&micro;g/m<sup>3</sup>",
+            "id": 120,
+            "name": "Micrograms per Cubic Meter",
+            "property": {
+              "name": "Concentration",
+              "id": 53
+            }
+          },
+          "data_source": {
+            "type": {
+              "id": 9,
+              "name": "AirLink"
+            },
+            "metadata": "pm_1"
+          }
+        },
+        {
+          "units": {
+            "property": {
+              "name": "Concentration",
+              "id": 53
+            },
+            "id": 120,
+            "name": "Micrograms per Cubic Meter",
+            "symbol": "&micro;g/m<sup>3</sup>"
+          },
+          "type_id": 70,
+          "data_source": {
+            "type": {
+              "id": 9,
+              "name": "AirLink"
+            },
+            "metadata": "pm_10"
+          },
+          "id": 50110,
+          "name": "AirLink PM10",
+          "type": "AirLink PM10",
+          "tokens": null
+        },
+        {
+          "type": "AirLink PM2.5",
+          "tokens": null,
+          "name": "AirLink PM2.5",
+          "id": 50113,
+          "data_source": {
+            "metadata": "pm_2p5",
+            "type": {
+              "id": 9,
+              "name": "AirLink"
+            }
+          },
+          "units": {
+            "name": "Micrograms per Cubic Meter",
+            "id": 120,
+            "property": {
+              "name": "Concentration",
+              "id": 53
+            },
+            "symbol": "&micro;g/m<sup>3</sup>"
+          },
+          "type_id": 67
+        }
+      ]
+    },
+    {
+      "sensors": [
+        {
+          "name": "Barometer",
+          "id": 50116,
+          "type": "Barometer",
+          "tokens": null,
+          "units": {
+            "id": 90,
+            "name": "Inches of Mercury",
+            "property": {
+              "name": "Barometric Pressure",
+              "id": 38
+            },
+            "symbol": "in. Hg"
+          },
+          "type_id": 16,
+          "data_source": {
+            "metadata": "//current_observation/pressure_in",
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            }
+          }
+        },
+        {
+          "tokens": null,
+          "type": "Barometer Tendency",
+          "id": 50119,
+          "name": "Barometer Tendency",
+          "data_source": {
+            "metadata": "//current_observation/davis_current_observation/pressure_tendency_string",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          },
+          "type_id": 29,
+          "units": {
+            "symbol": " ",
+            "property": {
+              "id": 52,
+              "name": "Barometric Pressure Tendency"
+            },
+            "id": 104,
+            "name": "Pressure Tendency"
+          }
+        }
+      ],
+      "type": "Console",
+      "geo": {
+        "lng": "-90.0793720000",
+        "lat": "29.9823840000"
+      },
+      "channel": "E",
+      "notes": "",
+      "name": "Console",
+      "id": 6058
+    },
+    {
+      "id": 6061,
+      "name": "ISS",
+      "notes": "",
+      "channel": "2",
+      "geo": {
+        "lat": "29.9823840000",
+        "lng": "-90.0793720000"
+      },
+      "type": "Integrated Sensor Suite",
+      "sensors": [
+        {
+          "type": "10 Minute Wind Gust",
+          "tokens": null,
+          "id": 50122,
+          "name": "10 Minute Wind Gust",
+          "data_source": {
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            },
+            "metadata": "//current_observation/davis_current_observation/wind_ten_min_gust_mph"
+          },
+          "units": {
+            "name": "Miles Per Hour",
+            "id": 88,
+            "property": {
+              "name": "Wind Speed",
+              "id": 36
+            },
+            "symbol": "mph"
+          },
+          "type_id": 47
+        },
+        {
+          "type": "Anemometer",
+          "tokens": null,
+          "name": "Anemometer",
+          "id": 50125,
+          "data_source": {
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            },
+            "metadata": "//current_observation/wind_mph"
+          },
+          "units": {
+            "id": 88,
+            "name": "Miles Per Hour",
+            "property": {
+              "name": "Wind Speed",
+              "id": 36
+            },
+            "symbol": "mph"
+          },
+          "type_id": 15
+        },
+        {
+          "data_source": {
+            "metadata": "//current_observation/dewpoint_f",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          },
+          "units": {
+            "property": {
+              "name": "Temperature",
+              "id": 35
+            },
+            "id": 82,
+            "name": "Degrees Fahrenheit",
+            "symbol": "&deg;F"
+          },
+          "type_id": 30,
+          "type": "Dewpoint",
+          "tokens": null,
+          "name": "Dewpoint",
+          "id": 50128
+        },
+        {
+          "tokens": null,
+          "type": "Heat Index",
+          "name": "Heat Index",
+          "id": 50131,
+          "data_source": {
+            "metadata": "//current_observation/heat_index_f",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          },
+          "type_id": 33,
+          "units": {
+            "symbol": "&deg;F",
+            "property": {
+              "name": "Temperature",
+              "id": 35
+            },
+            "id": 82,
+            "name": "Degrees Fahrenheit"
+          }
+        },
+        {
+          "type_id": 23,
+          "units": {
+            "symbol": "%",
+            "name": "Percent Humidity",
+            "id": 89,
+            "property": {
+              "name": "Relative Humidity",
+              "id": 37
+            }
+          },
+          "data_source": {
+            "metadata": "//current_observation/relative_humidity",
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            }
+          },
+          "id": 50134,
+          "name": "Hygrometer",
+          "tokens": null,
+          "type": "Hygrometer"
+        },
+        {
+          "id": 50137,
+          "name": "Solar Radiation Sensor",
+          "tokens": null,
+          "type": "Solar Radiation Sensor",
+          "type_id": 21,
+          "units": {
+            "symbol": "W/m^2",
+            "id": 92,
+            "name": "Watts Per Square Meter",
+            "property": {
+              "id": 41,
+              "name": "Solar Radiation"
+            }
+          },
+          "data_source": {
+            "metadata": "//current_observation/davis_current_observation/solar_radiation",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          }
+        },
+        {
+          "name": "Thermometer",
+          "id": 50140,
+          "tokens": null,
+          "type": "Thermometer",
+          "type_id": 13,
+          "units": {
+            "property": {
+              "id": 35,
+              "name": "Temperature"
+            },
+            "id": 82,
+            "name": "Degrees Fahrenheit",
+            "symbol": "&deg;F"
+          },
+          "data_source": {
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            },
+            "metadata": "//current_observation/temp_f"
+          }
+        },
+        {
+          "id": 50143,
+          "name": "UV Radiation Sensor",
+          "type": "UV Radiation Sensor",
+          "tokens": null,
+          "units": {
+            "symbol": " ",
+            "name": "UV Index",
+            "id": 93,
+            "property": {
+              "id": 42,
+              "name": "Ultra Violet Radiation"
+            }
+          },
+          "type_id": 20,
+          "data_source": {
+            "metadata": "//current_observation/davis_current_observation/uv_index",
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            }
+          }
+        },
+        {
+          "data_source": {
+            "metadata": "{\"namespace\":\"internal\",\"classref\":\"WeatherSTEM::Entity::Station::Instrument::Davis\",\"method\":\"get_wbgt\"}",
+            "type": {
+              "name": "Generic",
+              "id": 2
+            }
+          },
+          "units": {
+            "id": 82,
+            "name": "Degrees Fahrenheit",
+            "property": {
+              "id": 35,
+              "name": "Temperature"
+            },
+            "symbol": "&deg;F"
+          },
+          "type_id": 35,
+          "type": "Wet Bulb Globe Temperature",
+          "tokens": null,
+          "id": 50146,
+          "name": "Wet Bulb Globe Temperature"
+        },
+        {
+          "units": {
+            "symbol": "&deg;F",
+            "property": {
+              "id": 35,
+              "name": "Temperature"
+            },
+            "id": 82,
+            "name": "Degrees Fahrenheit"
+          },
+          "type_id": 42,
+          "data_source": {
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            },
+            "metadata": "//current_observation/windchill_f"
+          },
+          "name": "Wind Chill",
+          "id": 50149,
+          "type": "Wind Chill",
+          "tokens": null
+        },
+        {
+          "id": 50152,
+          "name": "Wind Vane",
+          "tokens": null,
+          "type": "Wind Vane",
+          "type_id": 17,
+          "units": {
+            "id": 91,
+            "name": "Degrees",
+            "property": {
+              "id": 40,
+              "name": "Wind Direction"
+            },
+            "symbol": "&deg;"
+          },
+          "data_source": {
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            },
+            "metadata": "//current_observation/wind_degrees"
+          }
+        },
+        {
+          "name": "Rain Gauge",
+          "id": 50155,
+          "tokens": null,
+          "type": "Rain Gauge",
+          "type_id": 28,
+          "units": {
+            "name": "Inches",
+            "id": 102,
+            "property": {
+              "name": "Today's Rainfall",
+              "id": 51
+            },
+            "symbol": "in."
+          },
+          "data_source": {
+            "metadata": "//current_observation/davis_current_observation/rain_day_in",
+            "type": {
+              "name": "WeatherLink",
+              "id": 1
+            }
+          }
+        },
+        {
+          "units": {
+            "id": 94,
+            "name": "Inches Per Hour",
+            "property": {
+              "name": "Rain Rate",
+              "id": 45
+            },
+            "symbol": "in/hr"
+          },
+          "type_id": 22,
+          "data_source": {
+            "type": {
+              "id": 1,
+              "name": "WeatherLink"
+            },
+            "metadata": "//current_observation/davis_current_observation/rain_rate_in_per_hr"
+          },
+          "id": 50158,
+          "name": "Rain Rate",
+          "type": "Rain Rate",
+          "tokens": null
+        }
+      ]
+    }
+  ],
+  "hardware": {
+    "device_id": "001D0A719EB1",
+    "weatherlinklive_id": "001D0A719EB1"
+  }
+}
