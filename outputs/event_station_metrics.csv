@@ -1,0 +1,25 @@
+event_id,event_datetime,event_parish,event_lat,event_lon,station_parish,station_network,station_name,station_slug,station_lat,station_lon,distance_mi,records,coverage_pct,event_total_in,peak_rain_rate_inhr,qc_negative_resets,qc_big_1min_increments,max_5min_in,max_15min_in,max_30min_in,max_60min_in,max_180min_in
+1260568,2025-05-09 14:50:00,ORLEANS,29.93,-90.07,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,3.078,425,101.0,0.61,1.73,0,0,0.1,0.2,0.25,0.4,0.6
+1260570,2025-05-09 15:00:00,ORLEANS,29.9538,-90.1363,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,1.497,425,101.0,0.81,2.18,0,0,0.12,0.25,0.37,0.42,0.8
+1260577,2025-05-09 15:45:00,ORLEANS,29.9659,-90.1086,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,2.139,422,100.2,1.76,4.0,0,0,0.28,0.57,0.89,1.24,1.75
+1260569,2025-05-09 14:50:00,ORLEANS,29.97,-90.07,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,3.809,425,101.0,0.61,1.73,0,0,0.1,0.2,0.25,0.4,0.6
+1260571,2025-05-09 15:00:00,ORLEANS,29.97,-90.08,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,3.351,425,101.0,0.81,2.18,0,0,0.12,0.25,0.37,0.42,0.8
+1260574,2025-05-09 15:15:00,ORLEANS,29.97,-90.09,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,2.943,424,100.7,1.36,4.0,0,0,0.28,0.57,0.8,0.93,1.35
+1260575,2025-05-09 15:15:00,ORLEANS,29.98,-90.09,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,3.508,424,100.7,1.36,4.0,0,0,0.28,0.57,0.8,0.93,1.35
+1260576,2025-05-09 15:15:00,ORLEANS,29.98,-90.11,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,3.054,424,100.7,1.36,4.0,0,0,0.28,0.57,0.8,0.93,1.35
+1260578,2025-05-09 16:15:00,JEFFERSON,29.9968,-90.1242,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,4.151,421,100.0,1.87,4.0,0,0,0.28,0.57,0.89,1.24,1.86
+1260573,2025-05-09 15:10:00,ORLEANS,29.998,-90.1115,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,4.265,424,100.7,1.19,4.0,0,0,0.28,0.51,0.72,0.78,1.18
+1260603,2025-05-28 14:30:00,ORLEANS,29.99,-90.07,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,4.771,423,100.5,0.0,0.0,0,0,0.0,0.0,0.0,0.0,0.0
+1278338,2025-06-13 10:55:00,ORLEANS,29.97,-90.09,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,2.943,423,100.5,0.05,1.22,0,0,0.05,0.05,0.05,0.05,0.05
+1279226,2025-06-14 16:15:00,ORLEANS,29.93,-90.08,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,2.488,427,101.4,0.88,0.0,3,0,0.87,0.87,0.87,0.88,0.88
+1279228,2025-06-14 16:15:00,ORLEANS,29.9547,-90.0806,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,2.706,427,101.4,0.88,0.0,3,0,0.87,0.87,0.87,0.88,0.88
+1279223,2025-06-14 16:05:00,ST. CHARLES,29.96,-90.37,St. Charles,stcharles,St. Charles Parish EOC,stcharleseoc,29.9678,-90.4093,2.413,399,94.8,0.27,1.05,3,0,0.18,0.18,0.18,0.18,0.2
+1279229,2025-06-14 16:15:00,ORLEANS,29.96,-90.06,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,3.977,427,101.4,0.88,0.0,3,0,0.87,0.87,0.87,0.88,0.88
+1279256,2025-06-14 16:15:00,ORLEANS,29.96,-90.08,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,2.922,427,101.4,0.88,0.0,3,0,0.87,0.87,0.87,0.88,0.88
+1279258,2025-06-14 16:15:00,ORLEANS,29.97,-90.08,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,3.351,427,101.4,0.88,0.0,3,0,0.87,0.87,0.87,0.88,0.88
+1286881,2025-07-12 15:15:00,ORLEANS,29.94,-90.07,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,3.05,420,99.8,0.01,0.0,2,0,0.01,0.01,0.01,0.01,0.01
+1286880,2025-07-12 15:05:00,ORLEANS,29.9544,-90.0692,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,3.32,420,99.8,0.01,0.0,2,0,0.01,0.01,0.01,0.01,0.01
+1286882,2025-07-12 16:05:00,ORLEANS,29.96,-90.07,Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,29.9368,-90.1208,3.438,420,99.8,0.12,2.37,2,0,0.08,0.11,0.11,0.11,0.12
+1286885,2025-07-17 17:15:00,ST. CHARLES,29.93,-90.37,St. Charles,stcharles,St. Charles Parish EOC,stcharleseoc,29.9678,-90.4093,3.515,394,93.6,1.65,3.67,0,0,0.24,0.6,1.0,1.46,1.65
+1286884,2025-07-17 17:04:00,ST. CHARLES,29.97,-90.37,St. Charles,stcharles,St. Charles Parish EOC,stcharleseoc,29.9678,-90.4093,2.357,395,93.8,1.29,3.67,0,0,0.24,0.46,0.9,1.29,1.29
+1286892,2025-07-30 15:09:00,EAST BATON ROUGE,30.38,-91.11,East Baton Rouge,eastbatonrouge,Louisiana State University - Alex Box Stadium,alexbox,30.4077,-91.1874,4.994,616,146.3,0.0,0.0,0,0,0.0,0.0,0.0,0.0,0.0

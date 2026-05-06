@@ -1,0 +1,68 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1208,
+          29.9368
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "slug": "loyola",
+        "station_id": "1819",
+        "rain_gauge_sensor_id": "37688",
+        "rain_rate_sensor_id": "37691",
+        "oldest_record": null,
+        "notes": "Confirmed via browser payload; lat/lon starter estimate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1874,
+          30.4077
+        ]
+      },
+      "properties": {
+        "parish": "East Baton Rouge",
+        "network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "slug": "alexbox",
+        "station_id": "1313",
+        "rain_gauge_sensor_id": "27974",
+        "rain_rate_sensor_id": "27977",
+        "oldest_record": null,
+        "notes": "Confirmed via browser payload; lat/lon starter estimate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.4093,
+          29.9678
+        ]
+      },
+      "properties": {
+        "parish": "St. Charles",
+        "network": "stcharles",
+        "station_name": "St. Charles Parish EOC",
+        "slug": "stcharleseoc",
+        "station_id": "1884",
+        "rain_gauge_sensor_id": "38955",
+        "rain_rate_sensor_id": "38958",
+        "oldest_record": null,
+        "notes": "Confirmed via browser payload; lat/lon starter estimate"
+      }
+    }
+  ]
+}

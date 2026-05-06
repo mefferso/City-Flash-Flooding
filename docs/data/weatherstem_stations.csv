@@ -1,0 +1,4 @@
+parish,network,station_name,slug,station_id,rain_gauge_sensor_id,rain_rate_sensor_id,lat,lon,oldest_record,notes
+Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,1819,37688,37691,29.9368,-90.1208,,Confirmed via browser payload; lat/lon starter estimate
+East Baton Rouge,eastbatonrouge,Louisiana State University - Alex Box Stadium,alexbox,1313,27974,27977,30.4077,-91.1874,,Confirmed via browser payload; lat/lon starter estimate
+St. Charles,stcharles,St. Charles Parish EOC,stcharleseoc,1884,38955,38958,29.9678,-90.4093,,Confirmed via browser payload; lat/lon starter estimate
