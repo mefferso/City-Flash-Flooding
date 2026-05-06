@@ -12,6 +12,7 @@ import csv
 import json
 import re
 import time
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -104,7 +105,6 @@ def find_lat_lon(obj: Any) -> tuple[str, str]:
 
 
 def find_station_id(obj: Any, html_text: str = "") -> str:
-    # Prefer explicit station/model IDs from JSON-like metadata.
     for key, value in flatten(obj):
         kl = key.lower()
         if any(token in kl for token in ["station_id", "stationid", "model.id", "id"]):
@@ -112,11 +112,10 @@ def find_station_id(obj: Any, html_text: str = "") -> str:
             if s.isdigit() and 1 <= len(s) <= 8:
                 return s
 
-    # Fallback regexes from station/data pages.
     patterns = [
-        r'"id"\s*:\s*"?(\d{2,8})"?',
-        r"station[_-]?id['\"]?\s*[:=]\s*['\"]?(\d{2,8})",
-        r"data-station-id=['\"](\d{2,8})['\"]",
+        r'"id"\s*:\s*"?(\d{1,8})"?',
+        r"station[_-]?id['\"]?\s*[:=]\s*['\"]?(\d{1,8})",
+        r"data-station-id=['\"](\d{1,8})['\"]",
     ]
     for pat in patterns:
         m = re.search(pat, html_text, re.I)
@@ -134,23 +133,21 @@ def sensor_candidates_from_obj(obj: Any) -> list[dict[str, str]]:
             continue
         if "rain" in kl and s.isdigit():
             candidates.append({"sensor_id": s, "source_key": key, "label": key})
-        if s.lower() in ["rain gauge", "rain rate", "rain"]:
+        if s.lower() in ["rain gauge", "rain rate", "rain", "precipitation", "precip"]:
             candidates.append({"sensor_id": "", "source_key": key, "label": s})
     return candidates
 
 
 def sensor_candidates_from_text(text: str) -> list[dict[str, str]]:
     candidates: list[dict[str, str]] = []
-
-    # Look for compact JSON snippets where Rain Gauge / Rain Rate are near an ID.
-    rain_blocks = re.findall(r".{0,160}Rain\s*(?:Gauge|Rate).{0,160}", text, flags=re.I | re.S)
+    rain_blocks = re.findall(r".{0,300}Rain\s*(?:Gauge|Rate).{0,300}", text, flags=re.I | re.S)
+    rain_blocks += re.findall(r".{0,300}(?:Precipitation|Precip).{0,300}", text, flags=re.I | re.S)
     for block in rain_blocks:
-        ids = re.findall(r'(?:(?:sensor|id|sensor_id)["\']?\s*[:=]\s*["\']?)(\d{3,8})', block, flags=re.I)
-        loose_ids = re.findall(r'\b(\d{4,8})\b', block)
-        label = "Rain Rate" if re.search(r"Rain\s*Rate", block, re.I) else "Rain Gauge" if re.search(r"Rain\s*Gauge", block, re.I) else "Rain"
+        ids = re.findall(r'(?:(?:sensor|id|sensor_id)["\']?\s*[:=]\s*["\']?)(\d{1,8})', block, flags=re.I)
+        loose_ids = re.findall(r'\b(\d{3,8})\b', block)
+        label = "Rain Rate" if re.search(r"Rain\s*Rate", block, re.I) else "Rain Gauge" if re.search(r"Rain\s*Gauge|Precip", block, re.I) else "Rain"
         for sid in ids or loose_ids:
             candidates.append({"sensor_id": sid, "source_key": "html_near_rain", "label": label})
-
     return candidates
 
 
@@ -158,38 +155,120 @@ def choose_rain_sensors(candidates: list[dict[str, str]]) -> tuple[str, str, str
     gauge = ""
     rate = ""
     notes: list[str] = []
-
     for cand in candidates:
         sid = clean(cand.get("sensor_id"))
         label = clean(cand.get("label") or cand.get("source_key"))
         if not sid or not sid.isdigit():
             continue
         ll = label.lower()
-        if not gauge and "rain" in ll and "rate" not in ll:
+        if not gauge and ("rain" in ll or "precip" in ll) and "rate" not in ll:
             gauge = sid
         if not rate and "rain" in ll and "rate" in ll:
             rate = sid
 
-    # WeatherSTEM sensor IDs often appear adjacent as gauge/rate. If we only found
-    # unlabeled rain candidates, keep them as review candidates instead of guessing.
     unique_ids = []
     for cand in candidates:
         sid = clean(cand.get("sensor_id"))
         if sid.isdigit() and sid not in unique_ids:
             unique_ids.append(sid)
     if not gauge and len(unique_ids) >= 1:
-        notes.append(f"candidate_sensor_ids={';'.join(unique_ids[:8])}")
+        notes.append(f"candidate_sensor_ids={';'.join(unique_ids[:20])}")
     if not rate and len(unique_ids) >= 2:
         notes.append("rain gauge/rate labels not confidently identified")
-
     return gauge, rate, "; ".join(notes)
+
+
+def pull_data_endpoint(network: str, slug: str, station_id: str, sensors: list[str]) -> Any | None:
+    end_dt = datetime.utcnow().replace(second=0, microsecond=0)
+    start_dt = end_dt - timedelta(hours=1)
+    url = f"https://{network}.weatherstem.com/data"
+    payload = {
+        "timezone_offset": 0,
+        "id": station_id,
+        "start_date": start_dt.strftime("%Y-%m-%d %H:%M"),
+        "end_date": end_dt.strftime("%Y-%m-%d %H:%M"),
+        "operation": "datapoint",
+        "interval": "minute",
+        "sensors": sensors,
+        "format": "json",
+        "timestamp_format": "standard",
+        "record_id": "1",
+        "mysql_mode": False,
+        "query": "",
+    }
+    headers = {
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "Origin": f"https://{network}.weatherstem.com",
+        "Referer": f"https://{network}.weatherstem.com/data?refer=/{slug}",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": COMMON_HEADERS["User-Agent"],
+    }
+    try:
+        resp = requests.post(url, headers=headers, data=json.dumps(payload), impersonate="chrome", timeout=90)
+        if resp.status_code != 200:
+            return None
+        return resp.json()
+    except Exception:
+        return None
+
+
+def candidate_sensor_ids_from_all(json_objs: list[Any], html_texts: list[str]) -> list[str]:
+    ids: list[str] = []
+    for obj in json_objs:
+        for key, value in flatten(obj):
+            s = clean(value)
+            kl = key.lower()
+            if s.isdigit() and 1 <= len(s) <= 8 and any(tok in kl for tok in ["sensor", "rain", "precip", "datapoint", "parameter"]):
+                if s not in ids:
+                    ids.append(s)
+    for text in html_texts:
+        for pat in [
+            r'"sensor[_-]?id"\s*:\s*"?(\d{1,8})"?',
+            r'"sensor"\s*:\s*"?(\d{1,8})"?',
+            r'data-sensor-id=["\'](\d{1,8})["\']',
+            r'\b(?:Rain Gauge|Rain Rate|Precipitation|Precip)\b.{0,120}?\b(\d{1,8})\b',
+            r'\b(\d{3,8})\b.{0,120}?\b(?:Rain Gauge|Rain Rate|Precipitation|Precip)\b',
+        ]:
+            for sid in re.findall(pat, text, flags=re.I | re.S):
+                if sid not in ids:
+                    ids.append(sid)
+    return ids[:80]
+
+
+def validate_sensor_pair(network: str, slug: str, station_id: str, candidate_ids: list[str]) -> tuple[str, str, str]:
+    if not station_id or not candidate_ids:
+        return "", "", ""
+
+    # First try all candidate IDs together. If WeatherSTEM returns headers, use them.
+    for chunk_start in range(0, len(candidate_ids), 20):
+        chunk = candidate_ids[chunk_start:chunk_start + 20]
+        data = pull_data_endpoint(network, slug, station_id, chunk)
+        if not isinstance(data, list) or len(data) < 1 or not isinstance(data[0], list):
+            continue
+        header = [clean(h) for h in data[0]]
+        gauge = ""
+        rate = ""
+        for idx, label in enumerate(header):
+            ll = label.lower()
+            sensor_idx = idx - 1  # header[0] is Timestamp; sensors start at header[1]
+            if sensor_idx < 0 or sensor_idx >= len(chunk):
+                continue
+            sid = chunk[sensor_idx]
+            if not gauge and (("rain" in ll and "rate" not in ll) or "precip" in ll):
+                gauge = sid
+            if not rate and "rain" in ll and "rate" in ll:
+                rate = sid
+        if gauge or rate:
+            return gauge, rate, f"validated via /data headers: {header}"
+
+    return "", "", f"tested_candidate_sensor_ids={';'.join(candidate_ids[:20])}"
 
 
 def discover_station(row: dict[str, str], raw_dir: Path, sleep_s: float = 0.5) -> dict[str, str]:
     network = clean(row.get("network"))
     slug = clean(row.get("slug"))
     station_name = clean(row.get("station_name"))
-
     out = {field: clean(row.get(field)) for field in OUT_FIELDS}
     out["status"] = "needs_review"
     notes: list[str] = []
@@ -204,7 +283,6 @@ def discover_station(row: dict[str, str], raw_dir: Path, sleep_s: float = 0.5) -
 
     json_objs: list[Any] = []
     html_texts: list[str] = []
-
     raw_dir.mkdir(parents=True, exist_ok=True)
     for url in urls:
         time.sleep(sleep_s)
@@ -258,6 +336,16 @@ def discover_station(row: dict[str, str], raw_dir: Path, sleep_s: float = 0.5) -
             out["rain_rate_sensor_id"] = rate
         if sensor_notes:
             notes.append(sensor_notes)
+
+    if out.get("station_id") and (not out.get("rain_gauge_sensor_id") or not out.get("rain_rate_sensor_id")):
+        candidate_ids = candidate_sensor_ids_from_all(json_objs, html_texts)
+        vgauge, vrate, vnotes = validate_sensor_pair(network, slug, out["station_id"], candidate_ids)
+        if not out.get("rain_gauge_sensor_id") and vgauge:
+            out["rain_gauge_sensor_id"] = vgauge
+        if not out.get("rain_rate_sensor_id") and vrate:
+            out["rain_rate_sensor_id"] = vrate
+        if vnotes:
+            notes.append(vnotes)
 
     required = ["station_id", "rain_gauge_sensor_id", "rain_rate_sensor_id", "lat", "lon"]
     if all(out.get(k) for k in required):
