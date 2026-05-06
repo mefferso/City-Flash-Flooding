@@ -6,6 +6,3900 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -90.073,
+          29.9952
+        ]
+      },
+      "properties": {
+        "event_id": "1009733",
+        "event_datetime": "2022-02-03 14:58:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.947",
+        "records": "0",
+        "coverage_pct": null,
+        "event_total_in": null,
+        "peak_rain_rate_inhr": null,
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": null,
+        "max_15min_in": null,
+        "max_30min_in": null,
+        "max_60min_in": null,
+        "max_180min_in": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1551,
+          30.4274
+        ]
+      },
+      "properties": {
+        "event_id": "1014017",
+        "event_datetime": "2022-03-22 16:16:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "2.357",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.17",
+        "peak_rain_rate_inhr": "2.33",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.08",
+        "max_15min_in": "0.12",
+        "max_30min_in": "0.17",
+        "max_60min_in": "0.17",
+        "max_180min_in": "0.17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0792,
+          29.9439
+        ]
+      },
+      "properties": {
+        "event_id": "1021946",
+        "event_datetime": "2022-04-13 23:14:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.539",
+        "records": "418",
+        "coverage_pct": "99.3",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.2,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1043340",
+        "event_datetime": "2022-06-10 11:38:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.829",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.72",
+        "peak_rain_rate_inhr": "3.79",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.16",
+        "max_15min_in": "0.3",
+        "max_30min_in": "0.39",
+        "max_60min_in": "0.39",
+        "max_180min_in": "0.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0954,
+          29.9842
+        ]
+      },
+      "properties": {
+        "event_id": "1043328",
+        "event_datetime": "2022-06-10 11:06:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.611",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.33",
+        "peak_rain_rate_inhr": "3.79",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.16",
+        "max_15min_in": "0.27",
+        "max_30min_in": "0.31",
+        "max_60min_in": "0.31",
+        "max_180min_in": "0.32"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1085,
+          29.9682
+        ]
+      },
+      "properties": {
+        "event_id": "1043564",
+        "event_datetime": "2022-07-20 16:35:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.291",
+        "records": "604",
+        "coverage_pct": "143.5",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.15,
+          30.42
+        ]
+      },
+      "properties": {
+        "event_id": "1043567",
+        "event_datetime": "2022-07-22 06:00:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "2.385",
+        "records": "338",
+        "coverage_pct": "80.3",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1189,
+          29.9172
+        ]
+      },
+      "properties": {
+        "event_id": "1043576",
+        "event_datetime": "2022-07-27 14:00:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.359",
+        "records": "468",
+        "coverage_pct": "111.2",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1803,
+          30.4036
+        ]
+      },
+      "properties": {
+        "event_id": "1055137",
+        "event_datetime": "2022-08-03 08:30:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "0.509",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.17,
+          30.41
+        ]
+      },
+      "properties": {
+        "event_id": "1055136",
+        "event_datetime": "2022-08-03 08:20:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "1.049",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.15,
+          30.44
+        ]
+      },
+      "properties": {
+        "event_id": "1055138",
+        "event_datetime": "2022-08-03 08:30:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "3.154",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.18,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1055144",
+        "event_datetime": "2022-08-09 13:45:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.66",
+        "records": "492",
+        "coverage_pct": "116.9",
+        "event_total_in": "4.23",
+        "peak_rain_rate_inhr": "10.47",
+        "qc_negative_resets": "1",
+        "qc_big_1min_increments": "1",
+        "max_5min_in": "2.14",
+        "max_15min_in": "2.14",
+        "max_30min_in": "2.17",
+        "max_60min_in": "2.64",
+        "max_180min_in": "4.23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.16,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1055142",
+        "event_datetime": "2022-08-09 13:00:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.842",
+        "records": "458",
+        "coverage_pct": "108.8",
+        "event_total_in": "2.09",
+        "peak_rain_rate_inhr": "10.47",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.54",
+        "max_15min_in": "1.15",
+        "max_30min_in": "1.55",
+        "max_60min_in": "2.05",
+        "max_180min_in": "2.09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.15,
+          29.98
+        ]
+      },
+      "properties": {
+        "event_id": "1055143",
+        "event_datetime": "2022-08-09 13:40:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.459",
+        "records": "487",
+        "coverage_pct": "115.7",
+        "event_total_in": "4.23",
+        "peak_rain_rate_inhr": "10.47",
+        "qc_negative_resets": "1",
+        "qc_big_1min_increments": "1",
+        "max_5min_in": "2.14",
+        "max_15min_in": "2.14",
+        "max_30min_in": "2.17",
+        "max_60min_in": "2.64",
+        "max_180min_in": "4.23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.08,
+          29.9
+        ]
+      },
+      "properties": {
+        "event_id": "1055147",
+        "event_datetime": "2022-08-10 12:09:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.526",
+        "records": "606",
+        "coverage_pct": "143.9",
+        "event_total_in": "2.69",
+        "peak_rain_rate_inhr": "8.11",
+        "qc_negative_resets": "1",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "1.77",
+        "max_15min_in": "2.24",
+        "max_30min_in": "2.27",
+        "max_60min_in": "2.27",
+        "max_180min_in": "2.27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1239,
+          29.9191
+        ]
+      },
+      "properties": {
+        "event_id": "1055146",
+        "event_datetime": "2022-08-10 11:29:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.237",
+        "records": "574",
+        "coverage_pct": "136.3",
+        "event_total_in": "0.43",
+        "peak_rain_rate_inhr": "2.09",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.1",
+        "max_15min_in": "0.24",
+        "max_30min_in": "0.36",
+        "max_60min_in": "0.41",
+        "max_180min_in": "0.43"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.15,
+          30.42
+        ]
+      },
+      "properties": {
+        "event_id": "1055203",
+        "event_datetime": "2022-08-11 13:15:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "2.385",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1,
+          29.92
+        ]
+      },
+      "properties": {
+        "event_id": "1057934",
+        "event_datetime": "2022-09-03 14:50:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.703",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "1.07",
+        "peak_rain_rate_inhr": "6.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.41",
+        "max_15min_in": "0.46",
+        "max_30min_in": "0.5",
+        "max_60min_in": "0.57",
+        "max_180min_in": "0.57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.102,
+          29.9202
+        ]
+      },
+      "properties": {
+        "event_id": "1057932",
+        "event_datetime": "2022-09-03 14:35:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.607",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "0.61",
+        "peak_rain_rate_inhr": "5.01",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.26",
+        "max_15min_in": "0.37",
+        "max_30min_in": "0.45",
+        "max_60min_in": "0.57",
+        "max_180min_in": "0.57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0807,
+          29.923
+        ]
+      },
+      "properties": {
+        "event_id": "1057937",
+        "event_datetime": "2022-09-03 14:50:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.584",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "1.07",
+        "peak_rain_rate_inhr": "6.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.41",
+        "max_15min_in": "0.46",
+        "max_30min_in": "0.5",
+        "max_60min_in": "0.57",
+        "max_180min_in": "0.57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1011,
+          29.9233
+        ]
+      },
+      "properties": {
+        "event_id": "1057945",
+        "event_datetime": "2022-09-03 14:50:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.504",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "1.07",
+        "peak_rain_rate_inhr": "6.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.41",
+        "max_15min_in": "0.46",
+        "max_30min_in": "0.5",
+        "max_60min_in": "0.57",
+        "max_180min_in": "0.57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.073,
+          29.9267
+        ]
+      },
+      "properties": {
+        "event_id": "1057935",
+        "event_datetime": "2022-09-03 14:50:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.946",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "1.07",
+        "peak_rain_rate_inhr": "6.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.41",
+        "max_15min_in": "0.46",
+        "max_30min_in": "0.5",
+        "max_60min_in": "0.57",
+        "max_180min_in": "0.57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.12,
+          29.94
+        ]
+      },
+      "properties": {
+        "event_id": "1057931",
+        "event_datetime": "2022-09-03 14:29:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "0.226",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "0.57",
+        "peak_rain_rate_inhr": "5.01",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.26",
+        "max_15min_in": "0.37",
+        "max_30min_in": "0.45",
+        "max_60min_in": "0.57",
+        "max_180min_in": "0.57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.12,
+          29.94
+        ]
+      },
+      "properties": {
+        "event_id": "1057949",
+        "event_datetime": "2022-09-03 14:57:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "0.226",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "1.51",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.48",
+        "max_15min_in": "0.89",
+        "max_30min_in": "0.94",
+        "max_60min_in": "0.94",
+        "max_180min_in": "0.94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1168,
+          29.9412
+        ]
+      },
+      "properties": {
+        "event_id": "1057933",
+        "event_datetime": "2022-09-03 14:47:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "0.387",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "0.82",
+        "peak_rain_rate_inhr": "5.14",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.26",
+        "max_15min_in": "0.37",
+        "max_30min_in": "0.45",
+        "max_60min_in": "0.57",
+        "max_180min_in": "0.57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1316,
+          29.9493
+        ]
+      },
+      "properties": {
+        "event_id": "1057948",
+        "event_datetime": "2022-09-03 14:50:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.079",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "1.07",
+        "peak_rain_rate_inhr": "6.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.41",
+        "max_15min_in": "0.46",
+        "max_30min_in": "0.5",
+        "max_60min_in": "0.57",
+        "max_180min_in": "0.57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.15,
+          30.42
+        ]
+      },
+      "properties": {
+        "event_id": "1057928",
+        "event_datetime": "2022-09-03 09:50:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "2.385",
+        "records": "421",
+        "coverage_pct": "100.0",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1323,
+          30.4245
+        ]
+      },
+      "properties": {
+        "event_id": "1057929",
+        "event_datetime": "2022-09-03 09:50:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "3.482",
+        "records": "421",
+        "coverage_pct": "100.0",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.14,
+          30.44
+        ]
+      },
+      "properties": {
+        "event_id": "1057930",
+        "event_datetime": "2022-09-03 09:50:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "3.599",
+        "records": "421",
+        "coverage_pct": "100.0",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0891,
+          29.9898
+        ]
+      },
+      "properties": {
+        "event_id": "1068503",
+        "event_datetime": "2022-12-14 17:15:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.124",
+        "records": "738",
+        "coverage_pct": "175.3",
+        "event_total_in": "1.94",
+        "peak_rain_rate_inhr": "10.11",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.41",
+        "max_15min_in": "0.77",
+        "max_30min_in": "1.17",
+        "max_60min_in": "1.89",
+        "max_180min_in": "1.94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.15,
+          30.41
+        ]
+      },
+      "properties": {
+        "event_id": "1077654",
+        "event_datetime": "2023-01-29 12:51:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "2.234",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.15,
+          30.42
+        ]
+      },
+      "properties": {
+        "event_id": "1077646",
+        "event_datetime": "2023-01-29 10:46:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "2.385",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1817,
+          30.4575
+        ]
+      },
+      "properties": {
+        "event_id": "1077657",
+        "event_datetime": "2023-01-29 13:40:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "3.458",
+        "records": "415",
+        "coverage_pct": "98.6",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.18,
+          30.46
+        ]
+      },
+      "properties": {
+        "event_id": "1077655",
+        "event_datetime": "2023-01-29 13:10:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "3.64",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1786,
+          29.9309
+        ]
+      },
+      "properties": {
+        "event_id": "1083312",
+        "event_datetime": "2023-02-08 23:15:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.485",
+        "records": "421",
+        "coverage_pct": "100.0",
+        "event_total_in": "0.57",
+        "peak_rain_rate_inhr": "5.01",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.18",
+        "max_15min_in": "0.36",
+        "max_30min_in": "0.43",
+        "max_60min_in": "0.43",
+        "max_180min_in": "0.57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.12,
+          29.98
+        ]
+      },
+      "properties": {
+        "event_id": "1104590",
+        "event_datetime": "2023-05-09 15:00:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.985",
+        "records": "416",
+        "coverage_pct": "98.8",
+        "event_total_in": "1.11",
+        "peak_rain_rate_inhr": "6.94",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.42",
+        "max_15min_in": "0.63",
+        "max_30min_in": "0.72",
+        "max_60min_in": "0.79",
+        "max_180min_in": "0.83"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.08,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1104574",
+        "event_datetime": "2023-05-09 12:05:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.413",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.28",
+        "peak_rain_rate_inhr": "2.4",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.11",
+        "max_15min_in": "0.22",
+        "max_30min_in": "0.25",
+        "max_60min_in": "0.28",
+        "max_180min_in": "0.28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1104586",
+        "event_datetime": "2023-05-09 13:50:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.732",
+        "records": "416",
+        "coverage_pct": "98.8",
+        "event_total_in": "0.32",
+        "peak_rain_rate_inhr": "2.4",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.11",
+        "max_15min_in": "0.22",
+        "max_30min_in": "0.25",
+        "max_60min_in": "0.28",
+        "max_180min_in": "0.32"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1104589",
+        "event_datetime": "2023-05-09 14:30:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.732",
+        "records": "416",
+        "coverage_pct": "98.8",
+        "event_total_in": "0.68",
+        "peak_rain_rate_inhr": "6.94",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.3",
+        "max_15min_in": "0.34",
+        "max_30min_in": "0.36",
+        "max_60min_in": "0.36",
+        "max_180min_in": "0.46"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.05,
+          29.97
+        ]
+      },
+      "properties": {
+        "event_id": "1125765",
+        "event_datetime": "2023-07-22 18:42:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.819",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1125770",
+        "event_datetime": "2023-07-22 18:56:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.771",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07,
+          29.97
+        ]
+      },
+      "properties": {
+        "event_id": "1142731",
+        "event_datetime": "2023-09-04 12:35:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.809",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.21",
+        "peak_rain_rate_inhr": "0.44",
+        "qc_negative_resets": "2",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.13",
+        "max_15min_in": "0.13",
+        "max_30min_in": "0.13",
+        "max_60min_in": "0.18",
+        "max_180min_in": "0.18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.09,
+          29.97
+        ]
+      },
+      "properties": {
+        "event_id": "1142725",
+        "event_datetime": "2023-09-04 12:06:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.943",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.21",
+        "peak_rain_rate_inhr": "0.44",
+        "qc_negative_resets": "2",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.13",
+        "max_15min_in": "0.13",
+        "max_30min_in": "0.13",
+        "max_60min_in": "0.18",
+        "max_180min_in": "0.18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.97
+        ]
+      },
+      "properties": {
+        "event_id": "1142729",
+        "event_datetime": "2023-09-04 12:35:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.383",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.21",
+        "peak_rain_rate_inhr": "0.44",
+        "qc_negative_resets": "2",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.13",
+        "max_15min_in": "0.13",
+        "max_30min_in": "0.13",
+        "max_60min_in": "0.18",
+        "max_180min_in": "0.18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.98
+        ]
+      },
+      "properties": {
+        "event_id": "1142728",
+        "event_datetime": "2023-09-04 12:15:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.054",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.21",
+        "peak_rain_rate_inhr": "0.44",
+        "qc_negative_resets": "2",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.13",
+        "max_15min_in": "0.13",
+        "max_30min_in": "0.13",
+        "max_60min_in": "0.18",
+        "max_180min_in": "0.18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1142804",
+        "event_datetime": "2023-09-04 13:00:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.732",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.36",
+        "peak_rain_rate_inhr": "3.62",
+        "qc_negative_resets": "2",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.13",
+        "max_15min_in": "0.15",
+        "max_30min_in": "0.15",
+        "max_60min_in": "0.18",
+        "max_180min_in": "0.18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1142722",
+        "event_datetime": "2023-09-04 12:13:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.771",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.21",
+        "peak_rain_rate_inhr": "0.44",
+        "qc_negative_resets": "2",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.13",
+        "max_15min_in": "0.13",
+        "max_30min_in": "0.13",
+        "max_60min_in": "0.18",
+        "max_180min_in": "0.18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          30.0
+        ]
+      },
+      "properties": {
+        "event_id": "1142730",
+        "event_datetime": "2023-09-04 12:38:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.414",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.21",
+        "peak_rain_rate_inhr": "0.44",
+        "qc_negative_resets": "2",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.13",
+        "max_15min_in": "0.13",
+        "max_30min_in": "0.13",
+        "max_60min_in": "0.18",
+        "max_180min_in": "0.18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          30.0
+        ]
+      },
+      "properties": {
+        "event_id": "1142720",
+        "event_datetime": "2023-09-04 12:00:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.414",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.21",
+        "peak_rain_rate_inhr": "0.44",
+        "qc_negative_resets": "2",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.13",
+        "max_15min_in": "0.13",
+        "max_30min_in": "0.13",
+        "max_60min_in": "0.18",
+        "max_180min_in": "0.18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1153152",
+        "event_datetime": "2023-12-02 06:55:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.544",
+        "records": "409",
+        "coverage_pct": "97.1",
+        "event_total_in": "5.2",
+        "peak_rain_rate_inhr": "7.48",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.52",
+        "max_15min_in": "1.07",
+        "max_30min_in": "1.67",
+        "max_60min_in": "2.45",
+        "max_180min_in": "4.93"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.05,
+          29.91
+        ]
+      },
+      "properties": {
+        "event_id": "1162275",
+        "event_datetime": "2024-02-03 18:53:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.626",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "3.99",
+        "peak_rain_rate_inhr": "6.86",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.29",
+        "max_15min_in": "0.63",
+        "max_30min_in": "1.03",
+        "max_60min_in": "1.71",
+        "max_180min_in": "3.86"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1605,
+          29.9297
+        ]
+      },
+      "properties": {
+        "event_id": "1162276",
+        "event_datetime": "2024-02-03 18:53:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.427",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "3.99",
+        "peak_rain_rate_inhr": "6.86",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.29",
+        "max_15min_in": "0.63",
+        "max_30min_in": "1.03",
+        "max_60min_in": "1.71",
+        "max_180min_in": "3.86"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0991,
+          29.979
+        ]
+      },
+      "properties": {
+        "event_id": "1162278",
+        "event_datetime": "2024-02-03 19:30:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.192",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "4.46",
+        "peak_rain_rate_inhr": "6.86",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.29",
+        "max_15min_in": "0.63",
+        "max_30min_in": "1.03",
+        "max_60min_in": "1.73",
+        "max_180min_in": "4.14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1285,
+          29.9921
+        ]
+      },
+      "properties": {
+        "event_id": "1162280",
+        "event_datetime": "2024-02-03 19:40:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.849",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "4.46",
+        "peak_rain_rate_inhr": "6.86",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.29",
+        "max_15min_in": "0.63",
+        "max_30min_in": "1.03",
+        "max_60min_in": "1.73",
+        "max_180min_in": "4.14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.94
+        ]
+      },
+      "properties": {
+        "event_id": "1168658",
+        "event_datetime": "2024-03-04 17:47:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "0.683",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "2.89",
+        "peak_rain_rate_inhr": "6.7",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.52",
+        "max_15min_in": "1.19",
+        "max_30min_in": "1.6",
+        "max_60min_in": "1.79",
+        "max_180min_in": "2.27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.05,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1168657",
+        "event_datetime": "2024-03-04 17:40:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.336",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "2.84",
+        "peak_rain_rate_inhr": "6.7",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.52",
+        "max_15min_in": "1.19",
+        "max_30min_in": "1.6",
+        "max_60min_in": "1.79",
+        "max_180min_in": "2.22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.06,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1168662",
+        "event_datetime": "2024-03-04 18:20:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.753",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "3.19",
+        "peak_rain_rate_inhr": "6.7",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.52",
+        "max_15min_in": "1.19",
+        "max_30min_in": "1.6",
+        "max_60min_in": "1.79",
+        "max_180min_in": "2.58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.06,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1168660",
+        "event_datetime": "2024-03-04 18:10:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.977",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "3.17",
+        "peak_rain_rate_inhr": "6.7",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.52",
+        "max_15min_in": "1.19",
+        "max_30min_in": "1.6",
+        "max_60min_in": "1.79",
+        "max_180min_in": "2.56"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1168655",
+        "event_datetime": "2024-03-04 17:00:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.881",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "2.39",
+        "peak_rain_rate_inhr": "6.7",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.52",
+        "max_15min_in": "1.19",
+        "max_30min_in": "1.6",
+        "max_60min_in": "1.74",
+        "max_180min_in": "1.82"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.19,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1177921",
+        "event_datetime": "2024-04-10 10:53:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.442",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "2.49",
+        "peak_rain_rate_inhr": "6.4",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.36",
+        "max_15min_in": "0.81",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.35",
+        "max_180min_in": "2.11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1177907",
+        "event_datetime": "2024-04-10 08:25:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.438",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.42",
+        "peak_rain_rate_inhr": "2.84",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.14",
+        "max_15min_in": "0.23",
+        "max_30min_in": "0.36",
+        "max_60min_in": "0.38",
+        "max_180min_in": "0.42"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.19,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1177914",
+        "event_datetime": "2024-04-10 10:09:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.442",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "1.73",
+        "peak_rain_rate_inhr": "6.4",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.36",
+        "max_15min_in": "0.81",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.35",
+        "max_180min_in": "1.73"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.97
+        ]
+      },
+      "properties": {
+        "event_id": "1177902",
+        "event_datetime": "2024-04-10 08:04:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.383",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.38",
+        "peak_rain_rate_inhr": "2.84",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.14",
+        "max_15min_in": "0.23",
+        "max_30min_in": "0.36",
+        "max_60min_in": "0.38",
+        "max_180min_in": "0.38"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.087,
+          29.9798
+        ]
+      },
+      "properties": {
+        "event_id": "1177904",
+        "event_datetime": "2024-04-10 08:23:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.595",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.41",
+        "peak_rain_rate_inhr": "2.84",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.14",
+        "max_15min_in": "0.23",
+        "max_30min_in": "0.36",
+        "max_60min_in": "0.38",
+        "max_180min_in": "0.41"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1177903",
+        "event_datetime": "2024-04-10 08:05:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.771",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.38",
+        "peak_rain_rate_inhr": "2.84",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.14",
+        "max_15min_in": "0.23",
+        "max_30min_in": "0.36",
+        "max_60min_in": "0.38",
+        "max_180min_in": "0.38"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          30.0
+        ]
+      },
+      "properties": {
+        "event_id": "1177918",
+        "event_datetime": "2024-04-10 10:50:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.414",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "2.38",
+        "peak_rain_rate_inhr": "6.4",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.36",
+        "max_15min_in": "0.81",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.35",
+        "max_180min_in": "2.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.18,
+          30.45
+        ]
+      },
+      "properties": {
+        "event_id": "1177901",
+        "event_datetime": "2024-04-10 07:45:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "2.956",
+        "records": "421",
+        "coverage_pct": "100.0",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1185923",
+        "event_datetime": "2024-05-16 22:40:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.771",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.05",
+        "peak_rain_rate_inhr": "0.4",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.03",
+        "max_15min_in": "0.05",
+        "max_30min_in": "0.05",
+        "max_60min_in": "0.05",
+        "max_180min_in": "0.05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.06,
+          29.94
+        ]
+      },
+      "properties": {
+        "event_id": "1185994",
+        "event_datetime": "2024-05-30 10:50:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.647",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.06,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1190846",
+        "event_datetime": "2024-06-01 14:15:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.977",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.74",
+        "peak_rain_rate_inhr": "1.42",
+        "qc_negative_resets": "1",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.62",
+        "max_15min_in": "0.74",
+        "max_30min_in": "0.74",
+        "max_60min_in": "0.74",
+        "max_180min_in": "0.74"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.15,
+          30.0
+        ]
+      },
+      "properties": {
+        "event_id": "1205871",
+        "event_datetime": "2024-07-03 11:50:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.703",
+        "records": "427",
+        "coverage_pct": "101.4",
+        "event_total_in": "0.09",
+        "peak_rain_rate_inhr": "0.5",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.04",
+        "max_15min_in": "0.07",
+        "max_30min_in": "0.09",
+        "max_60min_in": "0.09",
+        "max_180min_in": "0.09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.15,
+          30.0
+        ]
+      },
+      "properties": {
+        "event_id": "1205874",
+        "event_datetime": "2024-07-03 12:19:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.703",
+        "records": "426",
+        "coverage_pct": "101.2",
+        "event_total_in": "0.1",
+        "peak_rain_rate_inhr": "0.5",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.04",
+        "max_15min_in": "0.07",
+        "max_30min_in": "0.09",
+        "max_60min_in": "0.1",
+        "max_180min_in": "0.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.08,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1205893",
+        "event_datetime": "2024-07-05 19:10:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.607",
+        "records": "432",
+        "coverage_pct": "102.6",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.06,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1205889",
+        "event_datetime": "2024-07-05 19:00:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.977",
+        "records": "432",
+        "coverage_pct": "102.6",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1205892",
+        "event_datetime": "2024-07-05 19:05:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.438",
+        "records": "432",
+        "coverage_pct": "102.6",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.06,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1205896",
+        "event_datetime": "2024-07-05 19:25:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.977",
+        "records": "432",
+        "coverage_pct": "102.6",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1205897",
+        "event_datetime": "2024-07-05 19:25:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.728",
+        "records": "432",
+        "coverage_pct": "102.6",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.97
+        ]
+      },
+      "properties": {
+        "event_id": "1205891",
+        "event_datetime": "2024-07-05 19:00:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.383",
+        "records": "432",
+        "coverage_pct": "102.6",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.09,
+          29.97
+        ]
+      },
+      "properties": {
+        "event_id": "1205895",
+        "event_datetime": "2024-07-05 19:15:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.943",
+        "records": "433",
+        "coverage_pct": "102.9",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.97
+        ]
+      },
+      "properties": {
+        "event_id": "1205934",
+        "event_datetime": "2024-07-09 17:53:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.383",
+        "records": "432",
+        "coverage_pct": "102.6",
+        "event_total_in": "0.14",
+        "peak_rain_rate_inhr": "1.11",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.07",
+        "max_15min_in": "0.08",
+        "max_30min_in": "0.08",
+        "max_60min_in": "0.08",
+        "max_180min_in": "0.14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.09,
+          29.97
+        ]
+      },
+      "properties": {
+        "event_id": "1205935",
+        "event_datetime": "2024-07-09 18:42:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.943",
+        "records": "433",
+        "coverage_pct": "102.9",
+        "event_total_in": "0.06",
+        "peak_rain_rate_inhr": "1.11",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.06",
+        "max_15min_in": "0.06",
+        "max_30min_in": "0.06",
+        "max_60min_in": "0.06",
+        "max_180min_in": "0.06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.2,
+          29.94
+        ]
+      },
+      "properties": {
+        "event_id": "1205820",
+        "event_datetime": "2024-07-18 13:00:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.747",
+        "records": "424",
+        "coverage_pct": "100.7",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.2,
+          29.94
+        ]
+      },
+      "properties": {
+        "event_id": "1205824",
+        "event_datetime": "2024-07-18 13:45:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.747",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "0.53",
+        "peak_rain_rate_inhr": "9.29",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.27",
+        "max_15min_in": "0.41",
+        "max_30min_in": "0.46",
+        "max_60min_in": "0.53",
+        "max_180min_in": "0.53"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.13,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1205825",
+        "event_datetime": "2024-07-18 14:25:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.065",
+        "records": "424",
+        "coverage_pct": "100.7",
+        "event_total_in": "2.58",
+        "peak_rain_rate_inhr": "12.8",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.54",
+        "max_15min_in": "1.07",
+        "max_30min_in": "1.74",
+        "max_60min_in": "2.48",
+        "max_180min_in": "2.58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1205822",
+        "event_datetime": "2024-07-18 13:25:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.728",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "0.1",
+        "peak_rain_rate_inhr": "1.57",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.07",
+        "max_15min_in": "0.08",
+        "max_30min_in": "0.1",
+        "max_60min_in": "0.1",
+        "max_180min_in": "0.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.97
+        ]
+      },
+      "properties": {
+        "event_id": "1205819",
+        "event_datetime": "2024-07-18 12:45:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.383",
+        "records": "424",
+        "coverage_pct": "100.7",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.05,
+          29.91
+        ]
+      },
+      "properties": {
+        "event_id": "1205870",
+        "event_datetime": "2024-07-26 17:10:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.626",
+        "records": "443",
+        "coverage_pct": "105.2",
+        "event_total_in": "0.18",
+        "peak_rain_rate_inhr": "2.35",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.09",
+        "max_15min_in": "0.09",
+        "max_30min_in": "0.09",
+        "max_60min_in": "0.09",
+        "max_180min_in": "0.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1205867",
+        "event_datetime": "2024-07-26 16:54:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "1.544",
+        "records": "445",
+        "coverage_pct": "105.7",
+        "event_total_in": "0.1",
+        "peak_rain_rate_inhr": "2.35",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.09",
+        "max_15min_in": "0.09",
+        "max_30min_in": "0.09",
+        "max_60min_in": "0.09",
+        "max_180min_in": "0.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.38,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1218713",
+        "event_datetime": "2024-09-06 22:42:00",
+        "event_parish": "ST. CHARLES",
+        "station_parish": "St. Charles",
+        "station_network": "stcharles",
+        "station_name": "St. Charles Parish EOC",
+        "station_slug": "stcharleseoc",
+        "station_lat": "29.9678",
+        "station_lon": "-90.4093",
+        "distance_mi": "2.142",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "8.35",
+        "peak_rain_rate_inhr": "0.49",
+        "qc_negative_resets": "7",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "1.57",
+        "max_15min_in": "1.6",
+        "max_30min_in": "1.63",
+        "max_60min_in": "2.53",
+        "max_180min_in": "5.85"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.41,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1218716",
+        "event_datetime": "2024-09-06 22:01:00",
+        "event_parish": "ST. CHARLES",
+        "station_parish": "St. Charles",
+        "station_network": "stcharles",
+        "station_name": "St. Charles Parish EOC",
+        "station_slug": "stcharleseoc",
+        "station_lat": "29.9678",
+        "station_lon": "-90.4093",
+        "distance_mi": "1.231",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "8.26",
+        "peak_rain_rate_inhr": "0.49",
+        "qc_negative_resets": "7",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "1.56",
+        "max_15min_in": "1.59",
+        "max_30min_in": "1.63",
+        "max_60min_in": "2.53",
+        "max_180min_in": "5.85"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.36,
+          29.98
+        ]
+      },
+      "properties": {
+        "event_id": "1218715",
+        "event_datetime": "2024-09-06 22:56:00",
+        "event_parish": "ST. CHARLES",
+        "station_parish": "St. Charles",
+        "station_network": "stcharles",
+        "station_name": "St. Charles Parish EOC",
+        "station_slug": "stcharleseoc",
+        "station_lat": "29.9678",
+        "station_lon": "-90.4093",
+        "distance_mi": "3.069",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "8.37",
+        "peak_rain_rate_inhr": "0.49",
+        "qc_negative_resets": "7",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "1.57",
+        "max_15min_in": "1.6",
+        "max_30min_in": "1.63",
+        "max_60min_in": "2.53",
+        "max_180min_in": "5.85"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.4,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1218717",
+        "event_datetime": "2024-09-06 23:16:00",
+        "event_parish": "ST. CHARLES",
+        "station_parish": "St. Charles",
+        "station_network": "stcharles",
+        "station_name": "St. Charles Parish EOC",
+        "station_slug": "stcharleseoc",
+        "station_lat": "29.9678",
+        "station_lon": "-90.4093",
+        "distance_mi": "1.632",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "9.51",
+        "peak_rain_rate_inhr": "0.49",
+        "qc_negative_resets": "7",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "1.7",
+        "max_15min_in": "1.72",
+        "max_30min_in": "1.76",
+        "max_60min_in": "2.53",
+        "max_180min_in": "5.85"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1161,
+          30.0049
+        ]
+      },
+      "properties": {
+        "event_id": "1217874",
+        "event_datetime": "2024-09-11 20:00:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.714",
+        "records": "415",
+        "coverage_pct": "98.6",
+        "event_total_in": "5.58",
+        "peak_rain_rate_inhr": "2.95",
+        "qc_negative_resets": "4",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "1.45",
+        "max_15min_in": "1.48",
+        "max_30min_in": "1.55",
+        "max_60min_in": "2.74",
+        "max_180min_in": "4.97"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1137,
+          29.9989
+        ]
+      },
+      "properties": {
+        "event_id": "1224687",
+        "event_datetime": "2024-11-19 06:37:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.312",
+        "records": "514",
+        "coverage_pct": "122.1",
+        "event_total_in": "1.56",
+        "peak_rain_rate_inhr": "5.65",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.26",
+        "max_15min_in": "0.46",
+        "max_30min_in": "0.49",
+        "max_60min_in": "0.56",
+        "max_180min_in": "1.21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.09,
+          29.96
+        ]
+      },
+      "properties": {
+        "event_id": "1244105",
+        "event_datetime": "2025-02-19 02:00:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.443",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "1.58",
+        "peak_rain_rate_inhr": "3.08",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.14",
+        "max_15min_in": "0.27",
+        "max_30min_in": "0.35",
+        "max_60min_in": "0.61",
+        "max_180min_in": "1.24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1244106",
+        "event_datetime": "2025-02-19 02:00:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.771",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "1.58",
+        "peak_rain_rate_inhr": "3.08",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.14",
+        "max_15min_in": "0.27",
+        "max_30min_in": "0.35",
+        "max_60min_in": "0.61",
+        "max_180min_in": "1.24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11,
+          29.99
+        ]
+      },
+      "properties": {
+        "event_id": "1256185",
+        "event_datetime": "2025-03-15 17:15:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.732",
+        "records": "419",
+        "coverage_pct": "99.5",
+        "event_total_in": "0.0",
+        "peak_rain_rate_inhr": "0.0",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.0",
+        "max_15min_in": "0.0",
+        "max_30min_in": "0.0",
+        "max_60min_in": "0.0",
+        "max_180min_in": "0.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.15,
+          30.4
+        ]
+      },
+      "properties": {
+        "event_id": "1256339",
+        "event_datetime": "2025-03-29 17:51:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "2.291",
+        "records": "420",
+        "coverage_pct": "99.8",
+        "event_total_in": "0.25",
+        "peak_rain_rate_inhr": "0.83",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.05",
+        "max_15min_in": "0.1",
+        "max_30min_in": "0.14",
+        "max_60min_in": "0.21",
+        "max_180min_in": "0.24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0464,
+          29.9048
+        ]
+      },
+      "properties": {
+        "event_id": "1258060",
+        "event_datetime": "2025-04-21 15:00:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.974",
+        "records": "425",
+        "coverage_pct": "101.0",
+        "event_total_in": "1.98",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0583,
+          29.9102
+        ]
+      },
+      "properties": {
+        "event_id": "1258217",
+        "event_datetime": "2025-04-21 15:35:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.17",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "2.22",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0543,
+          29.9276
+        ]
+      },
+      "properties": {
+        "event_id": "1258062",
+        "event_datetime": "2025-04-21 15:08:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.032",
+        "records": "424",
+        "coverage_pct": "100.7",
+        "event_total_in": "2.02",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0765,
+          29.9304
+        ]
+      },
+      "properties": {
+        "event_id": "1258211",
+        "event_datetime": "2025-04-21 15:09:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.689",
+        "records": "424",
+        "coverage_pct": "100.7",
+        "event_total_in": "2.03",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0792,
+          29.9445
+        ]
+      },
+      "properties": {
+        "event_id": "1258212",
+        "event_datetime": "2025-04-21 15:15:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.547",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "2.06",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1329,
+          29.9452
+        ]
+      },
+      "properties": {
+        "event_id": "1258227",
+        "event_datetime": "2025-04-21 16:05:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "0.928",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "2.36",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0628,
+          29.9562
+        ]
+      },
+      "properties": {
+        "event_id": "1258225",
+        "event_datetime": "2025-04-21 15:47:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.722",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "2.25",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1964,
+          29.9566
+        ]
+      },
+      "properties": {
+        "event_id": "1258221",
+        "event_datetime": "2025-04-21 15:45:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.728",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "2.23",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1109,
+          29.9677
+        ]
+      },
+      "properties": {
+        "event_id": "1258215",
+        "event_datetime": "2025-04-21 15:17:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.216",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "2.06",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1752,
+          29.9685
+        ]
+      },
+      "properties": {
+        "event_id": "1258222",
+        "event_datetime": "2025-04-21 15:45:00",
+        "event_parish": "JEFFERSON",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.925",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "2.23",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0905,
+          29.9685
+        ]
+      },
+      "properties": {
+        "event_id": "1258230",
+        "event_datetime": "2025-04-21 16:35:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "2.844",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "2.92",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0672,
+          29.9869
+        ]
+      },
+      "properties": {
+        "event_id": "1258051",
+        "event_datetime": "2025-04-21 13:50:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.72",
+        "records": "422",
+        "coverage_pct": "100.2",
+        "event_total_in": "1.49",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0739,
+          29.9902
+        ]
+      },
+      "properties": {
+        "event_id": "1258053",
+        "event_datetime": "2025-04-21 13:52:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.636",
+        "records": "422",
+        "coverage_pct": "100.2",
+        "event_total_in": "1.49",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0679,
+          29.9923
+        ]
+      },
+      "properties": {
+        "event_id": "1258219",
+        "event_datetime": "2025-04-21 15:44:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "4.973",
+        "records": "423",
+        "coverage_pct": "100.5",
+        "event_total_in": "2.22",
+        "peak_rain_rate_inhr": "7.02",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.38",
+        "max_15min_in": "0.89",
+        "max_30min_in": "1.12",
+        "max_60min_in": "1.41",
+        "max_180min_in": "1.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.18,
+          30.4
+        ]
+      },
+      "properties": {
+        "event_id": "1258203",
+        "event_datetime": "2025-04-24 09:15:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "0.691",
+        "records": "620",
+        "coverage_pct": "147.3",
+        "event_total_in": "1.71",
+        "peak_rain_rate_inhr": "2.18",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.13",
+        "max_15min_in": "0.26",
+        "max_30min_in": "0.42",
+        "max_60min_in": "0.78",
+        "max_180min_in": "1.55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.17,
+          30.42
+        ]
+      },
+      "properties": {
+        "event_id": "1258200",
+        "event_datetime": "2025-04-24 09:34:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "1.341",
+        "records": "628",
+        "coverage_pct": "149.2",
+        "event_total_in": "2.17",
+        "peak_rain_rate_inhr": "3.41",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.22",
+        "max_15min_in": "0.48",
+        "max_30min_in": "0.69",
+        "max_60min_in": "0.78",
+        "max_180min_in": "1.79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.19,
+          30.42
+        ]
+      },
+      "properties": {
+        "event_id": "1258202",
+        "event_datetime": "2025-04-24 09:53:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "0.864",
+        "records": "632",
+        "coverage_pct": "150.1",
+        "event_total_in": "2.27",
+        "peak_rain_rate_inhr": "3.41",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.22",
+        "max_15min_in": "0.48",
+        "max_30min_in": "0.69",
+        "max_60min_in": "0.82",
+        "max_180min_in": "1.79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1944,
+          30.4274
+        ]
+      },
+      "properties": {
+        "event_id": "1258199",
+        "event_datetime": "2025-04-24 09:27:00",
+        "event_parish": "EAST BATON ROUGE",
+        "station_parish": "East Baton Rouge",
+        "station_network": "eastbatonrouge",
+        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_slug": "alexbox",
+        "station_lat": "30.4077",
+        "station_lon": "-91.1874",
+        "distance_mi": "1.424",
+        "records": "627",
+        "coverage_pct": "148.9",
+        "event_total_in": "2.09",
+        "peak_rain_rate_inhr": "3.41",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.22",
+        "max_15min_in": "0.48",
+        "max_30min_in": "0.63",
+        "max_60min_in": "0.78",
+        "max_180min_in": "1.77"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07,
+          29.94
+        ]
+      },
+      "properties": {
+        "event_id": "1260132",
+        "event_datetime": "2025-05-07 09:05:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.05",
+        "records": "439",
+        "coverage_pct": "104.3",
+        "event_total_in": "0.08",
+        "peak_rain_rate_inhr": "0.26",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.02",
+        "max_15min_in": "0.04",
+        "max_30min_in": "0.05",
+        "max_60min_in": "0.07",
+        "max_180min_in": "0.07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07,
+          29.95
+        ]
+      },
+      "properties": {
+        "event_id": "1260135",
+        "event_datetime": "2025-05-07 09:10:00",
+        "event_parish": "ORLEANS",
+        "station_parish": "Orleans",
+        "station_network": "orleans",
+        "station_name": "Loyola University New Orleans - Uptown/Audubon",
+        "station_slug": "loyola",
+        "station_lat": "29.9368",
+        "station_lon": "-90.1208",
+        "distance_mi": "3.175",
+        "records": "439",
+        "coverage_pct": "104.3",
+        "event_total_in": "0.08",
+        "peak_rain_rate_inhr": "0.26",
+        "qc_negative_resets": "0",
+        "qc_big_1min_increments": "0",
+        "max_5min_in": "0.02",
+        "max_15min_in": "0.04",
+        "max_30min_in": "0.05",
+        "max_60min_in": "0.07",
+        "max_180min_in": "0.07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -90.07,
           29.93
         ]
