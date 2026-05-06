@@ -58,10 +58,14 @@ jobs:
 
           echo "Running: ${CMD[*]}"
           "${CMD[@]}"
-
+      - name: Build map data
+        run: |
+          python scripts/build_map_data.py
       - name: Upload outputs
         uses: actions/upload-artifact@v4
         with:
           name: weatherstem-flash-flood-outputs
-          path: outputs/*.csv
+          path: |
+            outputs/*.csv
+            docs/data/*
           if-no-files-found: warn
