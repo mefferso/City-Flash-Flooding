@@ -1,0 +1,67 @@
+name: Run WeatherSTEM Flash Flood Enrichment
+
+on:
+  workflow_dispatch:
+    inputs:
+      min_date:
+        description: 'Skip events before this date. Use blank to disable.'
+        required: false
+        default: '2022-01-01'
+      radius:
+        description: 'Station search radius in miles'
+        required: false
+        default: '5'
+      max_events:
+        description: 'Optional limit for quick tests; leave blank for all events'
+        required: false
+        default: ''
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/**'
+      - 'data/**'
+      - '.github/workflows/run_weatherstem_enrichment.yml'
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run enrichment
+        shell: bash
+        run: |
+          CMD=(python scripts/enrich_weatherstem_flash_floods.py \
+            --events data/flash_flood_events_focus_parishes.csv \
+            --stations data/weatherstem_stations.csv \
+            --output-dir outputs \
+            --cache-dir weatherstem_cache \
+            --radius "${{ inputs.radius || '5' }}")
+
+          if [ -n "${{ inputs.min_date || '2022-01-01' }}" ]; then
+            CMD+=(--min-date "${{ inputs.min_date || '2022-01-01' }}")
+          fi
+
+          if [ -n "${{ inputs.max_events }}" ]; then
+            CMD+=(--max-events "${{ inputs.max_events }}")
+          fi
+
+          echo "Running: ${CMD[*]}"
+          "${CMD[@]}"
+
+      - name: Upload outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: weatherstem-flash-flood-outputs
+          path: outputs/*.csv
+          if-no-files-found: warn
