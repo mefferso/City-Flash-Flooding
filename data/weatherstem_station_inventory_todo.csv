@@ -1,0 +1,32 @@
+parish,network,station_name,slug,station_id,rain_gauge_sensor_id,rain_rate_sensor_id,lat,lon,oldest_record,status_notes
+East Baton Rouge,eastbatonrouge,Louisiana State University (Alex Box Stadium),alexbox,1313,27974,27977,,,,confirmed
+East Baton Rouge,eastbatonrouge,Louisiana State University (Tiger Stadium),tigerstadium,,,,,,,needs_payload
+Orleans,orleans,City Equipment Maintenance (Desire),desire,,,,,,,needs_payload
+Orleans,orleans,Fairgrounds Race Course (Fairgrounds),fairgrounds,,,,,,,needs_payload
+Orleans,orleans,Harbor Police Headquarters (Irish Channel),irishchannel,,,,,,,needs_payload
+Orleans,orleans,Loyola University New Orleans (Uptown/Audubon),loyola,1819,37688,37691,,,,confirmed
+Orleans,orleans,Municipal Training Academy East (Almonaster),almonaster,,,,,,,needs_payload
+Orleans,orleans,Municipal Yacht Harbor (Lakefront),lakefront,,,,,,,needs_payload
+Orleans,orleans,New Orleans City Hall (Central Business District),cityhall,,,,,,,needs_payload
+Orleans,orleans,NOFD Engine 4 (Pines Village),engine4,,,,,,,needs_payload
+Orleans,orleans,NOFD Engine 12 (Gentilly/Milneburg),engine12,,,,,,,needs_payload
+Orleans,orleans,NOFD Engine 16 (Central City),engine16,,,,,,,needs_payload
+Orleans,orleans,NOFD Engine 27 (Seventh Ward/St. Roch),engine27,,,,,,,needs_payload
+Orleans,orleans,NOFD Engine 31 (Venetian Isles),engine31,,,,,,,needs_payload
+Orleans,orleans,NOFD Engine 36 (New Orleans East),engine36,,,,,,,needs_payload
+Orleans,orleans,NOFD Logistics (Navarre),logistics,,,,,,,needs_payload
+Orleans,orleans,NOFD Rescue Squad 7 (Treme),treme,,,,,,,needs_payload
+Orleans,orleans,NOPD Stables (City Park),stables,,,,,,,needs_payload
+Orleans,orleans,NORDC Morris F.X. Jeff Sr. Park (Algiers),algiers,,,,,,,needs_payload
+Orleans,orleans,NORDC Norman Playground (Old Aurora),oldaurora,,,,,,,needs_payload
+Orleans,orleans,Port NOLA Administration (Warehouse District/Riverwalk),riverwalk,,,,,,,needs_payload
+Orleans,orleans,Port NOLA Maintenance (Uptown/West Riverside),maintenance,,,,,,,needs_payload
+Orleans,orleans,Regional Transit Authority (Mid City),midcity,,,,,,,needs_payload
+Orleans,orleans,SWBNO East Bank Water Intake (Carrollton Bend),carrolltonbend,,,,,,,needs_payload
+Orleans,orleans,SWBNO East Bank Water Treatment (Lower 9th Ward),lower9thward,,,,,,,needs_payload
+Orleans,orleans,SWBNO Pumping Station (Little Woods),littlewoods,,,,,,,needs_payload
+Orleans,orleans,SWBNO Pumping Station (Bayou Sauvage),bayousauvage,,,,,,,needs_payload
+Orleans,orleans,SWBNO West Bank Water Treatment (English Turn),englishturn,,,,,,,needs_payload
+St. Charles,stcharles,Killona Volunteer Fire Department,killona,,,,,,,needs_payload
+St. Charles,stcharles,St. Charles Parish EOC,stcharleseoc,1884,38955,38958,,,,confirmed
+St. Charles,stcharles,Willowridge Pump Station Luling,willowridge,,,,,,,needs_payload
