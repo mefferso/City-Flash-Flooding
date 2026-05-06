@@ -1,0 +1,73 @@
+name: Discover WeatherSTEM Stations
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Optional row limit for testing; leave blank for all stations'
+        required: false
+        default: ''
+      sleep_seconds:
+        description: 'Delay between WeatherSTEM endpoint requests'
+        required: false
+        default: '0.5'
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run station discovery
+        shell: bash
+        run: |
+          CMD=(python scripts/discover_weatherstem_station_ids.py \
+            --todo data/weatherstem_station_inventory_todo.csv \
+            --out outputs/weatherstem_station_inventory_candidates.csv \
+            --raw-dir outputs/weatherstem_discovery_raw \
+            --sleep "${{ inputs.sleep_seconds || '0.5' }}")
+
+          if [ -n "${{ inputs.limit }}" ]; then
+            CMD+=(--limit "${{ inputs.limit }}")
+          fi
+
+          echo "Running: ${CMD[*]}"
+          "${CMD[@]}"
+
+      - name: Commit discovery outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add outputs/weatherstem_station_inventory_candidates.csv outputs/weatherstem_discovery_raw || true
+
+          if git diff --cached --quiet; then
+            echo "No discovery output changes to commit."
+          else
+            git commit -m "Update WeatherSTEM station discovery candidates"
+            git push origin HEAD:main
+          fi
+
+      - name: Upload discovery outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: weatherstem-station-discovery
+          path: |
+            outputs/weatherstem_station_inventory_candidates.csv
+            outputs/weatherstem_discovery_raw/**
+          if-no-files-found: warn
