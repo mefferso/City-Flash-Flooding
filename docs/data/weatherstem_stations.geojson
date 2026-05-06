@@ -6,41 +6,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.1208,
-          29.9368
-        ]
-      },
-      "properties": {
-        "parish": "Orleans",
-        "network": "orleans",
-        "station_name": "Loyola University New Orleans - Uptown/Audubon",
-        "slug": "loyola",
-        "station_id": "1819",
-        "rain_gauge_sensor_id": "37688",
-        "rain_rate_sensor_id": "37691",
-        "oldest_record": null,
-        "notes": "Confirmed via browser payload; lat/lon starter estimate"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -91.1874,
-          30.4077
+          -91.183516,
+          30.411238
         ]
       },
       "properties": {
         "parish": "East Baton Rouge",
         "network": "eastbatonrouge",
-        "station_name": "Louisiana State University - Alex Box Stadium",
+        "station_name": "Louisiana State University (Alex Box Stadium)",
         "slug": "alexbox",
         "station_id": "1313",
         "rain_gauge_sensor_id": "27974",
         "rain_rate_sensor_id": "27977",
-        "oldest_record": null,
-        "notes": "Confirmed via browser payload; lat/lon starter estimate"
+        "oldest_record": "2019-05-08",
+        "notes": "confirmed manually from browser payload"
       }
     },
     {
@@ -48,8 +27,596 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.4093,
-          29.9678
+          -91.183756,
+          30.411921
+        ]
+      },
+      "properties": {
+        "parish": "East Baton Rouge",
+        "network": "eastbatonrouge",
+        "station_name": "Louisiana State University (Tiger Stadium)",
+        "slug": "tigerstadium",
+        "station_id": "1311",
+        "rain_gauge_sensor_id": "27905",
+        "rain_rate_sensor_id": "27908",
+        "oldest_record": "2019-05-08",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.03224,
+          29.99984
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "City Equipment Maintenance (Desire)",
+        "slug": "desire",
+        "station_id": "2245",
+        "rain_gauge_sensor_id": "47392",
+        "rain_rate_sensor_id": "47395",
+        "oldest_record": "2024-03-14",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.079372,
+          29.982384
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "Fairgrounds Race Course (Fairgrounds)",
+        "slug": "fairgrounds",
+        "station_id": "2356",
+        "rain_gauge_sensor_id": "50155",
+        "rain_rate_sensor_id": "50158",
+        "oldest_record": "2024-10-25",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.076342,
+          29.92069
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "Harbor Police Headquarters (Irish Channel)",
+        "slug": "portnolapd",
+        "station_id": "1972",
+        "rain_gauge_sensor_id": "40825",
+        "rain_rate_sensor_id": "40828",
+        "oldest_record": "2022-07-22",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.119921,
+          29.93707
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "Loyola University New Orleans (Uptown/Audubon)",
+        "slug": "loyola",
+        "station_id": "1819",
+        "rain_gauge_sensor_id": "37688",
+        "rain_rate_sensor_id": "37691",
+        "oldest_record": "2022-02-11",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.927994,
+          30.01734
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "Municipal Training Academy East (Almonaster)",
+        "slug": "almonaster",
+        "station_id": "1872",
+        "rain_gauge_sensor_id": "38733",
+        "rain_rate_sensor_id": "38736",
+        "oldest_record": "2022-04-26",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.115627,
+          30.028359
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "Municipal Yacht Harbor (Lakefront)",
+        "slug": "lakefront",
+        "station_id": "1890",
+        "rain_gauge_sensor_id": "39087",
+        "rain_rate_sensor_id": "39090",
+        "oldest_record": "2022-04-28",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.07675,
+          29.95221
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "New Orleans City Hall (Central Business District)",
+        "slug": "cityhallcbd",
+        "station_id": "1815",
+        "rain_gauge_sensor_id": "37613",
+        "rain_rate_sensor_id": "37616",
+        "oldest_record": "2022-08-22",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.02382,
+          30.0228
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NOFD Engine 4 (Pines Village)",
+        "slug": "pinesvillage",
+        "station_id": "2242",
+        "rain_gauge_sensor_id": "47347",
+        "rain_rate_sensor_id": "47350",
+        "oldest_record": "2024-03-14",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.05171,
+          30.01627
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NOFD Engine 12 (Gentilly/Milneburg)",
+        "slug": "gentilly",
+        "station_id": "1975",
+        "rain_gauge_sensor_id": "40870",
+        "rain_rate_sensor_id": "40873",
+        "oldest_record": "2022-07-25",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.08053,
+          29.94159
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NOFD Engine 16 (Central City)",
+        "slug": "centralcity",
+        "station_id": "1881",
+        "rain_gauge_sensor_id": "38910",
+        "rain_rate_sensor_id": "38913",
+        "oldest_record": "2022-04-28",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0585,
+          29.9796
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NOFD Engine 27 (Seventh Ward/St. Roch)",
+        "slug": "seventhward",
+        "station_id": "1875",
+        "rain_gauge_sensor_id": "38820",
+        "rain_rate_sensor_id": "38823",
+        "oldest_record": "2022-04-27",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.81334,
+          30.06522
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NOFD Engine 31 (Venetian Isles)",
+        "slug": "venetianisles",
+        "station_id": "1825",
+        "rain_gauge_sensor_id": "37819",
+        "rain_rate_sensor_id": "37822",
+        "oldest_record": "2022-02-11",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.96873,
+          30.02742
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NOFD Engine 36 (New Orleans East)",
+        "slug": "neworleanseast",
+        "station_id": "1871",
+        "rain_gauge_sensor_id": "38690",
+        "rain_rate_sensor_id": "38693",
+        "oldest_record": "2022-04-26",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.10934,
+          29.98614
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NOFD Logistics (Navarre)",
+        "slug": "logistics",
+        "station_id": "1887",
+        "rain_gauge_sensor_id": "39042",
+        "rain_rate_sensor_id": "39045",
+        "oldest_record": "2022-04-28",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.071544,
+          29.962679
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NOFD Rescue Squad 7 (Treme)",
+        "slug": "treme",
+        "station_id": "1885",
+        "rain_gauge_sensor_id": "38998",
+        "rain_rate_sensor_id": "39001",
+        "oldest_record": "2022-04-28",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.09909,
+          29.99789
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NOPD Stables (City Park)",
+        "slug": "citypark",
+        "station_id": "1878",
+        "rain_gauge_sensor_id": "38865",
+        "rain_rate_sensor_id": "38868",
+        "oldest_record": "2022-04-27",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.029914,
+          29.942018
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NORDC Morris F.X. Jeff Sr. Park (Algiers)",
+        "slug": "algiers",
+        "station_id": "1873",
+        "rain_gauge_sensor_id": "38776",
+        "rain_rate_sensor_id": "38779",
+        "oldest_record": "2022-04-28",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.998203,
+          29.919922
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "NORDC Norman Playground (Old Aurora)",
+        "slug": "oldaurora",
+        "station_id": "2281",
+        "rain_gauge_sensor_id": "48181",
+        "rain_rate_sensor_id": "48184",
+        "oldest_record": "2024-04-24",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.06206,
+          29.9369
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "Port NOLA Administration (Warehouse District/Riverwalk)",
+        "slug": "portnolaadmin",
+        "station_id": "1970",
+        "rain_gauge_sensor_id": "40781",
+        "rain_rate_sensor_id": "40784",
+        "oldest_record": "2022-07-22",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.11513,
+          29.91497
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "Port NOLA Maintenance (Uptown/West Riverside)",
+        "slug": "portnolamaintenance",
+        "station_id": "1968",
+        "rain_gauge_sensor_id": "40737",
+        "rain_rate_sensor_id": "40740",
+        "oldest_record": "2022-07-22",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.08893,
+          29.9672
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "Regional Transit Authority (Mid City)",
+        "slug": "midcity",
+        "station_id": "2248",
+        "rain_gauge_sensor_id": "47548",
+        "rain_rate_sensor_id": "47461",
+        "oldest_record": "2024-03-18",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.13797,
+          29.95334
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "SWBNO East Bank Water Intake (Carrollton Bend)",
+        "slug": "carrolltonbend",
+        "station_id": "1826",
+        "rain_gauge_sensor_id": "37862",
+        "rain_rate_sensor_id": "37865",
+        "oldest_record": "2022-02-11",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.99761,
+          29.97714
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "SWBNO East Bank Water Treatment (Lower 9th Ward)",
+        "slug": "lowerninthward",
+        "station_id": "1818",
+        "rain_gauge_sensor_id": "37649",
+        "rain_rate_sensor_id": "37652",
+        "oldest_record": "2022-02-10",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.966746,
+          30.058639
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "SWBNO Pumping Station (Little Woods)",
+        "slug": "littlewoods",
+        "station_id": "1822",
+        "rain_gauge_sensor_id": "37732",
+        "rain_rate_sensor_id": "37735",
+        "oldest_record": "2022-02-11",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.867959,
+          30.029771
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "SWBNO Pumping Station (Bayou Sauvage)",
+        "slug": "bayousauvage",
+        "station_id": "2280",
+        "rain_gauge_sensor_id": "48129",
+        "rain_rate_sensor_id": "48132",
+        "oldest_record": "2024-05-08",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.966192,
+          29.907042
+        ]
+      },
+      "properties": {
+        "parish": "Orleans",
+        "network": "orleans",
+        "station_name": "SWBNO West Bank Water Treatment (English Turn)",
+        "slug": "englishturn",
+        "station_id": "1824",
+        "rain_gauge_sensor_id": "37776",
+        "rain_rate_sensor_id": "37779",
+        "oldest_record": "2022-02-11",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.486359,
+          30.001421
+        ]
+      },
+      "properties": {
+        "parish": "St. Charles",
+        "network": "stcharles",
+        "station_name": "Killona Volunteer Fire Department",
+        "slug": "killona",
+        "station_id": "2016",
+        "rain_gauge_sensor_id": "41811",
+        "rain_rate_sensor_id": "41814",
+        "oldest_record": "2022-10-11",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.403987,
+          29.964178
         ]
       },
       "properties": {
@@ -60,8 +627,29 @@
         "station_id": "1884",
         "rain_gauge_sensor_id": "38955",
         "rain_rate_sensor_id": "38958",
-        "oldest_record": null,
-        "notes": "Confirmed via browser payload; lat/lon starter estimate"
+        "oldest_record": "2022-04-28",
+        "notes": "confirmed manually from browser payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.344,
+          29.88536
+        ]
+      },
+      "properties": {
+        "parish": "St. Charles",
+        "network": "stcharles",
+        "station_name": "Willowridge Pump Station Luling",
+        "slug": "luling",
+        "station_id": "2020",
+        "rain_gauge_sensor_id": "41899",
+        "rain_rate_sensor_id": "41902",
+        "oldest_record": "2022-10-12",
+        "notes": "confirmed manually from browser payload"
       }
     }
   ]

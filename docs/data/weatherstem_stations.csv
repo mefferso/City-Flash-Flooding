@@ -1,4 +1,32 @@
 parish,network,station_name,slug,station_id,rain_gauge_sensor_id,rain_rate_sensor_id,lat,lon,oldest_record,notes
-Orleans,orleans,Loyola University New Orleans - Uptown/Audubon,loyola,1819,37688,37691,29.9368,-90.1208,,Confirmed via browser payload; lat/lon starter estimate
-East Baton Rouge,eastbatonrouge,Louisiana State University - Alex Box Stadium,alexbox,1313,27974,27977,30.4077,-91.1874,,Confirmed via browser payload; lat/lon starter estimate
-St. Charles,stcharles,St. Charles Parish EOC,stcharleseoc,1884,38955,38958,29.9678,-90.4093,,Confirmed via browser payload; lat/lon starter estimate
+East Baton Rouge,eastbatonrouge,Louisiana State University (Alex Box Stadium),alexbox,1313,27974,27977,30.411238,-91.183516,2019-05-08,confirmed manually from browser payload
+East Baton Rouge,eastbatonrouge,Louisiana State University (Tiger Stadium),tigerstadium,1311,27905,27908,30.411921,-91.183756,2019-05-08,confirmed manually from browser payload
+Orleans,orleans,City Equipment Maintenance (Desire),desire,2245,47392,47395,29.99984,-90.03224,2024-03-14,confirmed manually from browser payload
+Orleans,orleans,Fairgrounds Race Course (Fairgrounds),fairgrounds,2356,50155,50158,29.982384,-90.079372,2024-10-25,confirmed manually from browser payload
+Orleans,orleans,Harbor Police Headquarters (Irish Channel),portnolapd,1972,40825,40828,29.92069,-90.076342,2022-07-22,confirmed manually from browser payload
+Orleans,orleans,Loyola University New Orleans (Uptown/Audubon),loyola,1819,37688,37691,29.93707,-90.119921,2022-02-11,confirmed manually from browser payload
+Orleans,orleans,Municipal Training Academy East (Almonaster),almonaster,1872,38733,38736,30.01734,-89.927994,2022-04-26,confirmed manually from browser payload
+Orleans,orleans,Municipal Yacht Harbor (Lakefront),lakefront,1890,39087,39090,30.028359,-90.115627,2022-04-28,confirmed manually from browser payload
+Orleans,orleans,New Orleans City Hall (Central Business District),cityhallcbd,1815,37613,37616,29.95221,-90.07675,2022-08-22,confirmed manually from browser payload
+Orleans,orleans,NOFD Engine 4 (Pines Village),pinesvillage,2242,47347,47350,30.0228,-90.02382,2024-03-14,confirmed manually from browser payload
+Orleans,orleans,NOFD Engine 12 (Gentilly/Milneburg),gentilly,1975,40870,40873,30.01627,-90.05171,2022-07-25,confirmed manually from browser payload
+Orleans,orleans,NOFD Engine 16 (Central City),centralcity,1881,38910,38913,29.94159,-90.08053,2022-04-28,confirmed manually from browser payload
+Orleans,orleans,NOFD Engine 27 (Seventh Ward/St. Roch),seventhward,1875,38820,38823,29.9796,-90.0585,2022-04-27,confirmed manually from browser payload
+Orleans,orleans,NOFD Engine 31 (Venetian Isles),venetianisles,1825,37819,37822,30.06522,-89.81334,2022-02-11,confirmed manually from browser payload
+Orleans,orleans,NOFD Engine 36 (New Orleans East),neworleanseast,1871,38690,38693,30.02742,-89.96873,2022-04-26,confirmed manually from browser payload
+Orleans,orleans,NOFD Logistics (Navarre),logistics,1887,39042,39045,29.98614,-90.10934,2022-04-28,confirmed manually from browser payload
+Orleans,orleans,NOFD Rescue Squad 7 (Treme),treme,1885,38998,39001,29.962679,-90.071544,2022-04-28,confirmed manually from browser payload
+Orleans,orleans,NOPD Stables (City Park),citypark,1878,38865,38868,29.99789,-90.09909,2022-04-27,confirmed manually from browser payload
+Orleans,orleans,NORDC Morris F.X. Jeff Sr. Park (Algiers),algiers,1873,38776,38779,29.942018,-90.029914,2022-04-28,confirmed manually from browser payload
+Orleans,orleans,NORDC Norman Playground (Old Aurora),oldaurora,2281,48181,48184,29.919922,-89.998203,2024-04-24,confirmed manually from browser payload
+Orleans,orleans,Port NOLA Administration (Warehouse District/Riverwalk),portnolaadmin,1970,40781,40784,29.9369,-90.06206,2022-07-22,confirmed manually from browser payload
+Orleans,orleans,Port NOLA Maintenance (Uptown/West Riverside),portnolamaintenance,1968,40737,40740,29.91497,-90.11513,2022-07-22,confirmed manually from browser payload
+Orleans,orleans,Regional Transit Authority (Mid City),midcity,2248,47548,47461,29.9672,-90.08893,2024-03-18,confirmed manually from browser payload
+Orleans,orleans,SWBNO East Bank Water Intake (Carrollton Bend),carrolltonbend,1826,37862,37865,29.95334,-90.13797,2022-02-11,confirmed manually from browser payload
+Orleans,orleans,SWBNO East Bank Water Treatment (Lower 9th Ward),lowerninthward,1818,37649,37652,29.97714,-89.99761,2022-02-10,confirmed manually from browser payload
+Orleans,orleans,SWBNO Pumping Station (Little Woods),littlewoods,1822,37732,37735,30.058639,-89.966746,2022-02-11,confirmed manually from browser payload
+Orleans,orleans,SWBNO Pumping Station (Bayou Sauvage),bayousauvage,2280,48129,48132,30.029771,-89.867959,2024-05-08,confirmed manually from browser payload
+Orleans,orleans,SWBNO West Bank Water Treatment (English Turn),englishturn,1824,37776,37779,29.907042,-89.966192,2022-02-11,confirmed manually from browser payload
+St. Charles,stcharles,Killona Volunteer Fire Department,killona,2016,41811,41814,30.001421,-90.486359,2022-10-11,confirmed manually from browser payload
+St. Charles,stcharles,St. Charles Parish EOC,stcharleseoc,1884,38955,38958,29.964178,-90.403987,2022-04-28,confirmed manually from browser payload
+St. Charles,stcharles,Willowridge Pump Station Luling,luling,2020,41899,41902,29.88536,-90.344,2022-10-12,confirmed manually from browser payload
