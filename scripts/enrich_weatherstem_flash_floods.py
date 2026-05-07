@@ -1,10 +1,15 @@
 """Link WeatherSTEM minute rainfall data to flash flood reports.
 
 This script reads a WeatherSTEM station inventory and a flash flood report CSV,
-then calculates rainfall metrics around each flash flood report.
+then calculates rainfall metrics near each flash flood report.
 
-Default event window: T-6 hours to T+1 hour.
-Default search radius: 5 miles.
+Default rainfall window mode: shared daily/storm window.
+For each event date, the default window runs from the first report that day minus
+3 hours through the last report that day plus 3 hours. This avoids report-time
+jitter causing nearby flash flood reports from the same storm to get wildly
+different rainfall values.
+
+Optional legacy mode: per-event window using T-6 hours to T+1 hour.
 """
 
 from __future__ import annotations
@@ -15,6 +20,7 @@ import json
 import math
 import re
 import time
+from dataclasses import dataclass
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -23,13 +29,25 @@ import pandas as pd
 from curl_cffi import requests
 
 DURATIONS_MIN = [5, 15, 30, 60, 180]
-WINDOW_HOURS_BEFORE = 6
-WINDOW_HOURS_AFTER = 1
+LEGACY_WINDOW_HOURS_BEFORE = 6
+LEGACY_WINDOW_HOURS_AFTER = 1
+DEFAULT_DAILY_PADDING_HOURS = 3
 
 DEFAULT_EVENTS = Path("data/flash_flood_events_focus_parishes.csv")
 DEFAULT_STATIONS = Path("data/weatherstem_stations.csv")
 DEFAULT_OUTPUT_DIR = Path("outputs")
 DEFAULT_CACHE_DIR = Path("weatherstem_cache")
+
+
+@dataclass
+class ParsedEvent:
+    source_index: int
+    event_id: str
+    event_datetime: datetime
+    event_date: str
+    event_parish: str
+    event_lat: float
+    event_lon: float
 
 
 def clean_str(value: Any) -> str:
@@ -337,6 +355,59 @@ def compute_rain_metrics(raw_data: Any, window_start: datetime, window_end: date
     return metrics
 
 
+def parse_events(events: pd.DataFrame, min_dt: datetime | None, max_events: int | None) -> list[ParsedEvent]:
+    parsed: list[ParsedEvent] = []
+    for idx, row in events.iterrows():
+        event_id = row_get(row, ["EVENT_ID", "event_id", "id"]) or f"row_{idx + 1}"
+        event_dt = parse_event_datetime(row)
+        event_lat, event_lon = parse_event_latlon(row)
+        parish = row_get(row, ["Parish/County", "parish", "PARISH", "CZ_NAME", "county", "COUNTY"])
+
+        if event_dt is None or event_lat is None or event_lon is None:
+            print(f"Skipping event {event_id}: missing datetime or lat/lon")
+            continue
+        if min_dt and event_dt < min_dt:
+            continue
+
+        parsed.append(
+            ParsedEvent(
+                source_index=idx,
+                event_id=event_id,
+                event_datetime=event_dt,
+                event_date=event_dt.date().isoformat(),
+                event_parish=parish,
+                event_lat=event_lat,
+                event_lon=event_lon,
+            )
+        )
+        if max_events and len(parsed) >= max_events:
+            break
+    return parsed
+
+
+def build_daily_windows(events: list[ParsedEvent], padding_hours: float) -> dict[str, tuple[datetime, datetime]]:
+    grouped: dict[str, list[datetime]] = {}
+    for event in events:
+        grouped.setdefault(event.event_date, []).append(event.event_datetime)
+
+    windows: dict[str, tuple[datetime, datetime]] = {}
+    padding = timedelta(hours=padding_hours)
+    for event_date, times in grouped.items():
+        windows[event_date] = (min(times) - padding, max(times) + padding)
+    return windows
+
+
+def window_for_event(event: ParsedEvent, args: argparse.Namespace, daily_windows: dict[str, tuple[datetime, datetime]]) -> tuple[str, datetime, datetime]:
+    if args.window_mode == "event":
+        return (
+            "event",
+            event.event_datetime - timedelta(hours=args.event_hours_before),
+            event.event_datetime + timedelta(hours=args.event_hours_after),
+        )
+    start, end = daily_windows[event.event_date]
+    return "daily", start, end
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Link WeatherSTEM rainfall data to flash flood reports.")
     parser.add_argument("--events", default=str(DEFAULT_EVENTS))
@@ -346,6 +417,15 @@ def main() -> None:
     parser.add_argument("--radius", type=float, default=5.0)
     parser.add_argument("--min-date", default="2022-01-01", help="Skip events before this date. Use blank string to disable.")
     parser.add_argument("--max-events", type=int, default=None, help="Optional limit for quick tests.")
+    parser.add_argument(
+        "--window-mode",
+        choices=["daily", "event"],
+        default="daily",
+        help="daily = first report that date minus padding through last report plus padding; event = legacy per-report window.",
+    )
+    parser.add_argument("--daily-padding-hours", type=float, default=DEFAULT_DAILY_PADDING_HOURS)
+    parser.add_argument("--event-hours-before", type=float, default=LEGACY_WINDOW_HOURS_BEFORE)
+    parser.add_argument("--event-hours-after", type=float, default=LEGACY_WINDOW_HOURS_AFTER)
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir)
@@ -362,50 +442,48 @@ def main() -> None:
     if not stations:
         raise SystemExit("No usable stations loaded. Add station lat/lon and sensor IDs.")
 
-    events = pd.read_csv(args.events, dtype=str, encoding="utf-8-sig")
+    raw_events = pd.read_csv(args.events, dtype=str, encoding="utf-8-sig")
+    events = parse_events(raw_events, min_dt, args.max_events)
+    daily_windows = build_daily_windows(events, args.daily_padding_hours)
+
     station_metric_rows: list[dict[str, Any]] = []
     summary_rows: list[dict[str, Any]] = []
-    processed = 0
+    station_window_cache: dict[tuple[str, str, str, str], Any] = {}
 
-    print(f"Loaded flash flood report rows: {len(events)}")
+    print(f"Loaded flash flood report rows: {len(raw_events)}")
+    print(f"Processed events after filters: {len(events)}")
+    print(f"Window mode: {args.window_mode}")
 
-    for idx, row in events.iterrows():
-        event_id = row_get(row, ["EVENT_ID", "event_id", "id"]) or f"row_{idx + 1}"
-        event_dt = parse_event_datetime(row)
-        event_lat, event_lon = parse_event_latlon(row)
-        parish = row_get(row, ["Parish/County", "parish", "PARISH", "CZ_NAME", "county", "COUNTY"])
-
-        if event_dt is None or event_lat is None or event_lon is None:
-            print(f"Skipping event {event_id}: missing datetime or lat/lon")
-            continue
-        if min_dt and event_dt < min_dt:
-            continue
-
-        processed += 1
-        if args.max_events and processed > args.max_events:
-            break
-
-        window_start = event_dt - timedelta(hours=WINDOW_HOURS_BEFORE)
-        window_end = event_dt + timedelta(hours=WINDOW_HOURS_AFTER)
-        print(f"\nEvent {event_id}: {event_dt} at {event_lat:.4f}, {event_lon:.4f}")
+    for event in events:
+        window_type, window_start, window_end = window_for_event(event, args, daily_windows)
+        print(f"\nEvent {event.event_id}: {event.event_datetime} at {event.event_lat:.4f}, {event.event_lon:.4f}")
+        print(f"  Rainfall window ({window_type}): {window_start} to {window_end}")
 
         nearby: list[tuple[float, dict[str, Any]]] = []
         for station in stations:
             if station.get("oldest_record") and window_end < station["oldest_record"]:
                 continue
-            dist = haversine_miles(event_lat, event_lon, station["lat"], station["lon"])
+            dist = haversine_miles(event.event_lat, event.event_lon, station["lat"], station["lon"])
             if dist <= args.radius:
                 nearby.append((dist, station))
         nearby.sort(key=lambda item: item[0])
 
+        base_summary: dict[str, Any] = {
+            "event_id": event.event_id,
+            "event_datetime": event.event_datetime,
+            "event_date": event.event_date,
+            "event_parish": event.event_parish,
+            "event_lat": event.event_lat,
+            "event_lon": event.event_lon,
+            "rainfall_window_type": window_type,
+            "rainfall_window_start": window_start,
+            "rainfall_window_end": window_end,
+        }
+
         if not nearby:
             summary_rows.append(
                 {
-                    "event_id": event_id,
-                    "event_datetime": event_dt,
-                    "event_parish": parish,
-                    "event_lat": event_lat,
-                    "event_lon": event_lon,
+                    **base_summary,
                     "stations_checked": 0,
                     "usable_stations": 0,
                     "nearest_station_confidence": "poor",
@@ -416,17 +494,29 @@ def main() -> None:
         event_station_results: list[dict[str, Any]] = []
         for dist, station in nearby:
             print(f"  Pulling {station['station_name']} ({dist:.2f} mi)")
-            raw = pull_weatherstem_station(station, window_start, window_end, cache_dir)
+            cache_key = (station["network"], station["slug"], f"{window_start:%Y%m%d%H%M}", f"{window_end:%Y%m%d%H%M}")
+            if cache_key in station_window_cache:
+                raw = station_window_cache[cache_key]
+            else:
+                raw = pull_weatherstem_station(station, window_start, window_end, cache_dir)
+                station_window_cache[cache_key] = raw
+                time.sleep(1)
+
             if isinstance(raw, dict) and "error" in raw:
                 print(f"    ERROR: {raw['error']}")
                 continue
+
             metrics = compute_rain_metrics(raw, window_start, window_end)
             result = {
-                "event_id": event_id,
-                "event_datetime": event_dt,
-                "event_parish": parish,
-                "event_lat": event_lat,
-                "event_lon": event_lon,
+                "event_id": event.event_id,
+                "event_datetime": event.event_datetime,
+                "event_date": event.event_date,
+                "event_parish": event.event_parish,
+                "event_lat": event.event_lat,
+                "event_lon": event.event_lon,
+                "rainfall_window_type": window_type,
+                "rainfall_window_start": window_start,
+                "rainfall_window_end": window_end,
                 "station_parish": station["parish"],
                 "station_network": station["network"],
                 "station_name": station["station_name"],
@@ -438,17 +528,12 @@ def main() -> None:
             }
             station_metric_rows.append(result)
             event_station_results.append(result)
-            time.sleep(1)
 
         usable = [r for r in event_station_results if r.get("records", 0) > 0]
         usable_sorted = sorted(usable, key=lambda r: r["distance_mi"])
 
         summary: dict[str, Any] = {
-            "event_id": event_id,
-            "event_datetime": event_dt,
-            "event_parish": parish,
-            "event_lat": event_lat,
-            "event_lon": event_lon,
+            **base_summary,
             "stations_checked": len(event_station_results),
             "usable_stations": len(usable),
         }
@@ -489,7 +574,7 @@ def main() -> None:
     pd.DataFrame(summary_rows).to_csv(summary_out, index=False)
 
     print("\nDone.")
-    print(f"Processed events after filters: {processed}")
+    print(f"Processed events after filters: {len(events)}")
     print(f"Station-level output: {station_out}")
     print(f"Event summary output:  {summary_out}")
 
