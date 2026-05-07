@@ -17,7 +17,7 @@
     #controls {
       position: absolute;
       top: 58px;
-      left: 14px;
+      left: 58px;
       z-index: 1000;
       background: rgba(20,20,20,0.92);
       color: white;
@@ -126,7 +126,7 @@
     <option value="nearest_max_60min_in" selected>Nearest Max 60-min</option>
     <option value="nearest_max_180min_in">Nearest Max 180-min</option>
     <option value="nearest_event_total_in">Nearest Event Total</option>
-    <option value="nearest_peak_rain_rate_inhr">Nearest Peak Rain Rate</option>
+    <option value="nearest_peak_rain_rate_inhr">Nearest Peak Instantaneous Rate</option>
     <option value="max_60min_within_5mi_in">Max 60-min Within 5 mi</option>
     <option value="max_180min_within_5mi_in">Max 180-min Within 5 mi</option>
     <option value="max_total_within_5mi_in">Max Total Within 5 mi</option>
@@ -185,16 +185,8 @@ function amountRateText(value, minutes) {
   return amount === '' ? '' : `${amount}" (${rate}"/hr)`;
 }
 
-function maxRainRateInHr(p) {
-  const rates = [
-    rateFromAmount(p.nearest_max_15min_in, 15),
-    rateFromAmount(p.nearest_max_30min_in, 30),
-    rateFromAmount(p.nearest_max_60min_in, 60),
-    rateFromAmount(p.nearest_max_180min_in, 180),
-    p.nearest_peak_rain_rate_inhr
-  ].map(num).filter(v => v != null);
-
-  return rates.length ? Math.max(...rates).toFixed(2) : '';
+function peakInstantaneousRate(p) {
+  return fmt(p.nearest_peak_rain_rate_inhr, 2);
 }
 
 function colorScale(v) {
@@ -283,7 +275,7 @@ function render() {
         <b>Nearest 60-min:</b> ${fmt(p.nearest_max_60min_in, 2)}"<br>
         <b>Nearest 180-min:</b> ${fmt(p.nearest_max_180min_in, 2)}"<br>
         <b>Nearest Total:</b> ${fmt(p.nearest_event_total_in, 2)}"<br>
-        <b>Max rainfall rate:</b> ${maxRainRateInHr(p)}"/hr
+        <b>Peak instantaneous rate:</b> ${peakInstantaneousRate(p)}"/hr
       `);
     }
   }).addTo(map);
