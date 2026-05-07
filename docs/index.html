@@ -107,6 +107,30 @@
       color: #ccc;
     }
 
+    .flash-popup {
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .flash-popup b {
+      font-weight: 700;
+    }
+
+    .flash-popup hr {
+      margin: 9px 0;
+    }
+
+    .flash-popup .rain-window-note {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #555;
+      line-height: 1.25;
+    }
+
+    .leaflet-popup-content {
+      font-size: 15px;
+    }
+
     .leaflet-top.leaflet-left {
       top: 8px;
       left: 8px;
@@ -295,20 +319,20 @@ function render() {
     onEachFeature: (feature, layer) => {
       const p = feature.properties;
       layer.bindPopup(`
-        <b>Event ID:</b> ${p.event_id ?? ''}<br>
-        <b>Date:</b> ${p.event_datetime ?? ''}<br>
-        <b>Parish:</b> ${p.event_parish ?? ''}<br>
-        <b>Nearest Station:</b> ${p.nearest_station_name ?? ''}<br>
-        <b>Distance:</b> ${p.nearest_station_distance_mi ?? ''} mi<br>
-        <b>Confidence:</b> ${p.nearest_station_confidence ?? ''}<br>
-        <b>Coverage:</b> ${p.nearest_coverage_pct ?? ''}%<br>
-        <hr>
-        <b>Nearest 15-min:</b> ${amountRateText(p.nearest_max_15min_in, 15)}<br>
-        <b>Nearest 30-min:</b> ${amountRateText(p.nearest_max_30min_in, 30)}<br>
-        <b>Nearest 60-min:</b> ${fmt(p.nearest_max_60min_in, 2)}"<br>
-        <b>Nearest 180-min:</b> ${fmt(p.nearest_max_180min_in, 2)}"<br>
-        <b>Nearest Total:</b> ${fmt(p.nearest_event_total_in, 2)}"<br>
-        <b>Peak instantaneous rate:</b> ${peakInstantaneousRate(p)}"/hr
+        <div class="flash-popup">
+          <b>Date:</b> ${p.event_datetime ?? ''}<br>
+          <b>Nearest Station:</b> ${p.nearest_station_name ?? ''}<br>
+          <b>Distance:</b> ${p.nearest_station_distance_mi ?? ''} mi<br>
+          <b>Confidence:</b> ${p.nearest_station_confidence ?? ''}<br>
+          <hr>
+          <b>Nearest 15-min:</b> ${amountRateText(p.nearest_max_15min_in, 15)}<br>
+          <b>Nearest 30-min:</b> ${amountRateText(p.nearest_max_30min_in, 30)}<br>
+          <b>Nearest 60-min:</b> ${fmt(p.nearest_max_60min_in, 2)}"<br>
+          <b>Nearest 180-min:</b> ${fmt(p.nearest_max_180min_in, 2)}"<br>
+          <b>Nearest Total:</b> ${fmt(p.nearest_event_total_in, 2)}"<br>
+          <b>Peak instantaneous rate:</b> ${peakInstantaneousRate(p)}"/hr
+          <div class="rain-window-note">Rainfall values use the current event-linked WeatherSTEM window. Shared storm-day windows will appear after the next enrichment rebuild.</div>
+        </div>
       `);
     }
   }).addTo(map);
