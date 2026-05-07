@@ -55,6 +55,58 @@
       color: #ddd;
     }
 
+    #legend {
+      position: absolute;
+      right: 18px;
+      bottom: 30px;
+      z-index: 1000;
+      width: 260px;
+      box-sizing: border-box;
+      background: rgba(20,20,20,0.92);
+      color: white;
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.45);
+    }
+
+    #legend-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    #legend-metric {
+      font-size: 12px;
+      color: #ddd;
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      margin: 5px 0;
+    }
+
+    .legend-swatch {
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      border: 1px solid #111;
+      flex: 0 0 17px;
+      box-sizing: border-box;
+    }
+
+    .legend-note {
+      margin-top: 8px;
+      font-size: 11px;
+      line-height: 1.25;
+      color: #ccc;
+    }
+
     .leaflet-top.leaflet-left {
       top: 8px;
       left: 8px;
@@ -89,6 +141,13 @@
   <div id="status">Loading data...</div>
 </div>
 
+<div id="legend">
+  <div id="legend-title">Rainfall color scale</div>
+  <div id="legend-metric">Dot color is based on the selected metric.</div>
+  <div id="legend-rows"></div>
+  <div class="legend-note">Dots are flash flood event locations. Dot size is fixed; events without usable rainfall data for the selected metric are hidden.</div>
+</div>
+
 <div id="map"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -102,6 +161,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let eventsLayer;
 let eventData;
+
+const FIXED_DOT_RADIUS = 8;
 
 function num(value) {
   const n = Number(value);
@@ -144,9 +205,32 @@ function colorScale(v) {
   return '#2c7bb6';
 }
 
-function radiusScale(v) {
-  if (v == null) return 5;
-  return Math.max(6, Math.min(16, 5 + v * 3));
+function metricLabel() {
+  const metricSelect = document.getElementById('metric');
+  return metricSelect.options[metricSelect.selectedIndex].text;
+}
+
+function metricUnit() {
+  const metric = document.getElementById('metric').value;
+  return metric.includes('inhr') ? '"/hr' : '"';
+}
+
+function updateLegend() {
+  const unit = metricUnit();
+  const rows = [
+    { color: '#2c7bb6', label: `< 1.00${unit}` },
+    { color: '#abd9e9', label: `1.00–1.99${unit}` },
+    { color: '#fdae61', label: `2.00–3.99${unit}` },
+    { color: '#d7191c', label: `≥ 4.00${unit}` }
+  ];
+
+  document.getElementById('legend-metric').textContent = `Selected metric: ${metricLabel()}`;
+  document.getElementById('legend-rows').innerHTML = rows.map(row => `
+    <div class="legend-row">
+      <span class="legend-swatch" style="background:${row.color}"></span>
+      <span>${row.label}</span>
+    </div>
+  `).join('');
 }
 
 function render() {
@@ -156,19 +240,27 @@ function render() {
 
   if (eventsLayer) map.removeLayer(eventsLayer);
 
+  updateLegend();
+
   let count = 0;
   eventsLayer = L.geoJSON(eventData, {
     filter: f => {
       const p = f.properties;
+      const val = num(p[metric]);
       const coverage = num(p.nearest_coverage_pct);
       const distance = num(p.nearest_station_distance_mi);
-      return (coverage ?? 0) >= minCoverage && (distance ?? 999) <= maxDistance;
+      const usableStations = num(p.usable_stations);
+
+      return val != null &&
+        (usableStations ?? 0) > 0 &&
+        (coverage ?? 0) >= minCoverage &&
+        (distance ?? 999) <= maxDistance;
     },
     pointToLayer: (feature, latlng) => {
       count += 1;
       const val = num(feature.properties[metric]);
       return L.circleMarker(latlng, {
-        radius: radiusScale(val),
+        radius: FIXED_DOT_RADIUS,
         color: '#111',
         weight: 1,
         fillColor: colorScale(val),
@@ -196,7 +288,7 @@ function render() {
     }
   }).addTo(map);
 
-  document.getElementById('status').textContent = `${count} events displayed`;
+  document.getElementById('status').textContent = `${count} events with rainfall data displayed`;
 }
 
 fetch('./data/flash_flood_events.geojson?v=' + Date.now())
