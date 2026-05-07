@@ -60,7 +60,7 @@
       right: 18px;
       bottom: 30px;
       z-index: 1000;
-      width: 260px;
+      width: 292px;
       box-sizing: border-box;
       background: rgba(20,20,20,0.92);
       color: white;
@@ -168,10 +168,10 @@
 </div>
 
 <div id="legend">
-  <div id="legend-title">Rainfall color scale</div>
+  <div id="legend-title">PDS-based rainfall scale</div>
   <div id="legend-metric">Dot color is based on the selected metric.</div>
   <div id="legend-rows"></div>
-  <div class="legend-note">Dots are flash flood event locations. Dot size is fixed; events without usable rainfall data for the selected metric are hidden.</div>
+  <div class="legend-note">Bins use NOAA Atlas 14/PDS recurrence estimates near New Orleans. Duration metrics use actual rainfall amount in that duration; peak instantaneous rate uses inches/hour.</div>
 </div>
 
 <div id="map"></div>
@@ -189,6 +189,87 @@ let eventsLayer;
 let eventData;
 
 const FIXED_DOT_RADIUS = 8;
+
+const PDS_COLORS = {
+  lt1: '#2c7bb6',
+  y1: '#74add1',
+  y2: '#abd9e9',
+  y5: '#ffffbf',
+  y10: '#fdae61',
+  y25: '#f46d43',
+  y50: '#d73027',
+  y100: '#a50026',
+  y500: '#7b3294'
+};
+
+const PDS_THRESHOLDS = {
+  nearest_max_15min_in: [
+    { min: -Infinity, max: 0.98, color: PDS_COLORS.lt1, label: '< 1-yr (<0.98")' },
+    { min: 0.98, max: 1.12, color: PDS_COLORS.y1, label: '1–2 yr (0.98–1.11")' },
+    { min: 1.12, max: 1.35, color: PDS_COLORS.y2, label: '2–5 yr (1.12–1.34")' },
+    { min: 1.35, max: 1.55, color: PDS_COLORS.y5, label: '5–10 yr (1.35–1.54")' },
+    { min: 1.55, max: 1.84, color: PDS_COLORS.y10, label: '10–25 yr (1.55–1.83")' },
+    { min: 1.84, max: 2.08, color: PDS_COLORS.y25, label: '25–50 yr (1.84–2.07")' },
+    { min: 2.08, max: 2.32, color: PDS_COLORS.y50, label: '50–100 yr (2.08–2.31")' },
+    { min: 2.32, max: 2.94, color: PDS_COLORS.y100, label: '100–500 yr (2.32–2.93")' },
+    { min: 2.94, max: Infinity, color: PDS_COLORS.y500, label: '≥500 yr (≥2.94")' }
+  ],
+  nearest_max_30min_in: [
+    { min: -Infinity, max: 1.50, color: PDS_COLORS.lt1, label: '< 1-yr (<1.50")' },
+    { min: 1.50, max: 1.71, color: PDS_COLORS.y1, label: '1–2 yr (1.50–1.70")' },
+    { min: 1.71, max: 2.08, color: PDS_COLORS.y2, label: '2–5 yr (1.71–2.07")' },
+    { min: 2.08, max: 2.41, color: PDS_COLORS.y5, label: '5–10 yr (2.08–2.40")' },
+    { min: 2.41, max: 2.87, color: PDS_COLORS.y10, label: '10–25 yr (2.41–2.86")' },
+    { min: 2.87, max: 3.25, color: PDS_COLORS.y25, label: '25–50 yr (2.87–3.24")' },
+    { min: 3.25, max: 3.64, color: PDS_COLORS.y50, label: '50–100 yr (3.25–3.63")' },
+    { min: 3.64, max: 4.62, color: PDS_COLORS.y100, label: '100–500 yr (3.64–4.61")' },
+    { min: 4.62, max: Infinity, color: PDS_COLORS.y500, label: '≥500 yr (≥4.62")' }
+  ],
+  nearest_max_60min_in: [
+    { min: -Infinity, max: 2.03, color: PDS_COLORS.lt1, label: '< 1-yr (<2.03")' },
+    { min: 2.03, max: 2.32, color: PDS_COLORS.y1, label: '1–2 yr (2.03–2.31")' },
+    { min: 2.32, max: 2.85, color: PDS_COLORS.y2, label: '2–5 yr (2.32–2.84")' },
+    { min: 2.85, max: 3.34, color: PDS_COLORS.y5, label: '5–10 yr (2.85–3.33")' },
+    { min: 3.34, max: 4.09, color: PDS_COLORS.y10, label: '10–25 yr (3.34–4.08")' },
+    { min: 4.09, max: 4.73, color: PDS_COLORS.y25, label: '25–50 yr (4.09–4.72")' },
+    { min: 4.73, max: 5.42, color: PDS_COLORS.y50, label: '50–100 yr (4.73–5.41")' },
+    { min: 5.42, max: 7.26, color: PDS_COLORS.y100, label: '100–500 yr (5.42–7.25")' },
+    { min: 7.26, max: Infinity, color: PDS_COLORS.y500, label: '≥500 yr (≥7.26")' }
+  ],
+  nearest_max_180min_in: [
+    { min: -Infinity, max: 2.91, color: PDS_COLORS.lt1, label: '< 1-yr (<2.91")' },
+    { min: 2.91, max: 3.31, color: PDS_COLORS.y1, label: '1–2 yr (2.91–3.30")' },
+    { min: 3.31, max: 4.10, color: PDS_COLORS.y2, label: '2–5 yr (3.31–4.09")' },
+    { min: 4.10, max: 4.89, color: PDS_COLORS.y5, label: '5–10 yr (4.10–4.88")' },
+    { min: 4.89, max: 6.17, color: PDS_COLORS.y10, label: '10–25 yr (4.89–6.16")' },
+    { min: 6.17, max: 7.31, color: PDS_COLORS.y25, label: '25–50 yr (6.17–7.30")' },
+    { min: 7.31, max: 8.58, color: PDS_COLORS.y50, label: '50–100 yr (7.31–8.57")' },
+    { min: 8.58, max: 12.10, color: PDS_COLORS.y100, label: '100–500 yr (8.58–12.09")' },
+    { min: 12.10, max: Infinity, color: PDS_COLORS.y500, label: '≥500 yr (≥12.10")' }
+  ],
+  nearest_event_total_in: [
+    { min: -Infinity, max: 2.91, color: PDS_COLORS.lt1, label: '< 1-yr 3-hr (<2.91")' },
+    { min: 2.91, max: 3.31, color: PDS_COLORS.y1, label: '1–2 yr 3-hr (2.91–3.30")' },
+    { min: 3.31, max: 4.10, color: PDS_COLORS.y2, label: '2–5 yr 3-hr (3.31–4.09")' },
+    { min: 4.10, max: 4.89, color: PDS_COLORS.y5, label: '5–10 yr 3-hr (4.10–4.88")' },
+    { min: 4.89, max: 6.17, color: PDS_COLORS.y10, label: '10–25 yr 3-hr (4.89–6.16")' },
+    { min: 6.17, max: 7.31, color: PDS_COLORS.y25, label: '25–50 yr 3-hr (6.17–7.30")' },
+    { min: 7.31, max: 8.58, color: PDS_COLORS.y50, label: '50–100 yr 3-hr (7.31–8.57")' },
+    { min: 8.58, max: 12.10, color: PDS_COLORS.y100, label: '100–500 yr 3-hr (8.58–12.09")' },
+    { min: 12.10, max: Infinity, color: PDS_COLORS.y500, label: '≥500 yr 3-hr (≥12.10")' }
+  ],
+  nearest_peak_rain_rate_inhr: [
+    { min: -Infinity, max: 4.0, color: PDS_COLORS.lt1, label: '<4.0"/hr' },
+    { min: 4.0, max: 6.0, color: PDS_COLORS.y2, label: '4.0–5.9"/hr' },
+    { min: 6.0, max: 8.0, color: PDS_COLORS.y10, label: '6.0–7.9"/hr' },
+    { min: 8.0, max: 10.0, color: PDS_COLORS.y50, label: '8.0–9.9"/hr' },
+    { min: 10.0, max: Infinity, color: PDS_COLORS.y500, label: '≥10.0"/hr' }
+  ]
+};
+
+PDS_THRESHOLDS.max_60min_within_5mi_in = PDS_THRESHOLDS.nearest_max_60min_in;
+PDS_THRESHOLDS.max_180min_within_5mi_in = PDS_THRESHOLDS.nearest_max_180min_in;
+PDS_THRESHOLDS.max_total_within_5mi_in = PDS_THRESHOLDS.nearest_event_total_in;
 
 function num(value) {
   const n = Number(value);
@@ -226,22 +307,20 @@ function peakInstantaneousRate(p) {
   return fmt(p.nearest_peak_rain_rate_inhr, 2);
 }
 
-function colorScale(v) {
+function thresholdRows(metric) {
+  return PDS_THRESHOLDS[metric] || PDS_THRESHOLDS.nearest_max_60min_in;
+}
+
+function colorScale(v, metric) {
   if (v == null) return '#888888';
-  if (v >= 4) return '#d7191c';
-  if (v >= 2) return '#fdae61';
-  if (v >= 1) return '#abd9e9';
-  return '#2c7bb6';
+  const rows = thresholdRows(metric);
+  const hit = rows.find(row => v >= row.min && v < row.max);
+  return hit ? hit.color : '#888888';
 }
 
 function metricLabel() {
   const metricSelect = document.getElementById('metric');
   return metricSelect.options[metricSelect.selectedIndex].text;
-}
-
-function metricUnit() {
-  const metric = document.getElementById('metric').value;
-  return metric.includes('inhr') ? '"/hr' : '"';
 }
 
 function featureHasUsableRainData(feature) {
@@ -265,14 +344,8 @@ function populateDateDropdown(data) {
 }
 
 function updateLegend() {
-  const unit = metricUnit();
-  const rows = [
-    { color: '#2c7bb6', label: `< 1.00${unit}` },
-    { color: '#abd9e9', label: `1.00–1.99${unit}` },
-    { color: '#fdae61', label: `2.00–3.99${unit}` },
-    { color: '#d7191c', label: `≥ 4.00${unit}` }
-  ];
-
+  const metric = document.getElementById('metric').value;
+  const rows = thresholdRows(metric);
   document.getElementById('legend-metric').textContent = `Selected metric: ${metricLabel()}`;
   document.getElementById('legend-rows').innerHTML = rows.map(row => `
     <div class="legend-row">
@@ -312,7 +385,7 @@ function render() {
         radius: FIXED_DOT_RADIUS,
         color: '#111',
         weight: 1,
-        fillColor: colorScale(val),
+        fillColor: colorScale(val, metric),
         fillOpacity: 0.85
       });
     },
